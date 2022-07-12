@@ -21,10 +21,11 @@
 #############################################################################
 {
     'name': "Stock Picking From Invoice",
-    'version': '14.0.1.0.0',
+    'version': '14.0.1.0.1',
     'summary': """Stock Picking From Customer/Supplier Invoice""",
     'description': """This Module Enables To Create Stocks Picking From Customer/Supplier Invoice""",
     'author': "Cybrosys Techno Solutions",
+    'live_test_url': 'https://www.youtube.com/watch?v=M_orDkIFIM4&feature=youtu.be',
     'company': 'Cybrosys Techno Solutions',
     'website': "https://www.cybrosys.com",
     'category': 'Accounting',

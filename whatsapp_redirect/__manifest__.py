@@ -21,7 +21,7 @@
 #############################################################################
 {
     'name': 'Send Whatsapp Message',
-    'version': '14.0.1.0.0',
+    'version': '14.0.1.0.1',
     'summary': 'Send Message to partner via Whatsapp web',
     'description': 'Send Message to partner via Whatsapp web',
     'live_test_url': 'https://www.youtube.com/watch?v=7doVs8tDSnU&feature=youtu.be',
@@ -38,7 +38,7 @@
         'views/view.xml',
         'wizard/wizard.xml',
     ],
-    'images': ['static/description/banner.gif'],
+    'images': ['static/description/banner.png'],
     'installable': True,
     'application': False,
     'auto_install': False,

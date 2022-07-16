@@ -19,23 +19,27 @@
 #    If not, see <http://www.gnu.org/licenses/>.
 #
 #############################################################################
-
-from odoo import models, fields, api
-
-
-class ProductTemplate(models.Model):
-    """inherited product"""
-    _inherit = 'product.template'
-
-    branch_id = fields.Many2one("res.branch", string='Branch', store=True,
-                                help='Leave this field empty if this product is'
-                                     ' shared between all branches'
-                                )
-    allowed_branch_ids = fields.Many2many('res.branch', store=True,
-                                          string="Allowed Branches",
-                                          compute='_compute_allowed_branch_ids')
-
-    @api.depends('company_id')
-    def _compute_allowed_branch_ids(self):
-        for po in self:
-            po.allowed_branch_ids = self.env.user.branch_ids.ids
+{
+    'name': "Product Stock Alert",
+    'version': '14.0.1.0.0',
+    'summary': """Product Stock Alert""",
+    "category": 'Inventory',
+    'description': """Product Stock Alert""",
+    'author': 'Cybrosys Techno Solutions',
+    'company': 'Cybrosys Techno Solutions',
+    'maintainer': 'Cybrosys Techno Solutions',
+    'website': 'https://www.cybrosys.com',
+    'depends': ['base', 'sale_management', 'stock', 'point_of_sale', 'product'],
+    'data': [
+        'views/res_config_settings_views.xml',
+        'views/product_product_views.xml',
+        'views/product_template_views.xml'
+    ],
+    'qweb': [
+        'static/src/xml/alert_tag_js.xml',
+    ],
+    'images': ['static/description/banner.png'],
+    'license': "LGPL-3",
+    'installable': True,
+    'application': True
+}

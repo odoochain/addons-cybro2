@@ -11,8 +11,8 @@
                     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
 
                     <!--google font css-->
-                    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
-                    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&amp;display=swap" rel="stylesheet"/>
+                    <link href="https://fonts.lug.ustc.edu.cn/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+                    <link href="https://fonts.lug.ustc.edu.cn/css2?family=Kaushan+Script&amp;display=swap" rel="stylesheet"/>
                 </head>
             <body>
                 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

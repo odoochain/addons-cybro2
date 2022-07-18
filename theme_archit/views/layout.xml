@@ -12,11 +12,11 @@
                 <title>Archit</title>
 
                 <link rel="stylesheet"
-                      href="https://fonts.googleapis.com/css2?family=Poppins&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans&amp;display=swap"/>
+                      href="https://fonts.lug.ustc.edu.cn/css2?family=Poppins&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans&amp;display=swap"/>
                 <link rel="stylesheet"
-                      href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@700&amp;display=swap"/>
+                      href="https://fonts.lug.ustc.edu.cn/css2?family=Overpass+Mono:wght@700&amp;display=swap"/>
                 <link rel="stylesheet"
-                      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&amp;display=swap"/>
+                      href="https://fonts.lug.ustc.edu.cn/css2?family=Julius+Sans+One&amp;display=swap"/>
 
 
                 <!-- bootstrap css -->
@@ -25,7 +25,7 @@
                       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
                       crossorigin="anonymous"/>
                 <!-- google icon css -->
-                <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                <link href="https://fonts.lug.ustc.edu.cn/icon?family=Material+Icons"
                       rel="stylesheet"/>
                 <link rel="stylesheet"
                       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -35,7 +35,7 @@
                       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
                       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
                       crossorigin="anonymous"/>
-                <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                <link href="https://fonts.lug.ustc.edu.cn/icon?family=Material+Icons"
                       rel="stylesheet"/>
                 <!-- Owl css -->
                 <link rel="stylesheet" href="/theme_archit/static/src/css/animate.min.css"/>

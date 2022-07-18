@@ -17,9 +17,9 @@
                         src="/theme_fuge/static/src/js/custom_background.js"/>
             </xpath>
             <xpath expr="." position="inside">
-                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap"
+                <link href="https://fonts.lug.ustc.edu.cn/css2?family=Roboto:wght@300;400;500;700&amp;display=swap"
                       rel="stylesheet"/>
-                <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&amp;display=swap"
+                <link href="https://fonts.lug.ustc.edu.cn/css2?family=Kaushan+Script&amp;display=swap"
                       rel="stylesheet"/>
             </xpath>
         </template>

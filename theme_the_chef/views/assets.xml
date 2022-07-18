@@ -35,9 +35,9 @@
                 <!--<script type="text/javascript" src="/theme_the_chef/static/src/js/owl.carousal.min.js"/>-->
             </xpath>
             <xpath expr="." position="inside">
-                <link href='https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&amp;display=swap' rel="stylesheet"/>
-                <link href='https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&amp;family=Satisfy&amp;display=swap' rel="stylesheet"/>
-                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;display=swap" rel="stylesheet"/>
+                <link href='https://fonts.lug.ustc.edu.cn/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&amp;display=swap' rel="stylesheet"/>
+                <link href='https://fonts.lug.ustc.edu.cn/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&amp;family=Satisfy&amp;display=swap' rel="stylesheet"/>
+                <link href="https://fonts.lug.ustc.edu.cn/css2?family=Poppins:wght@600&amp;display=swap" rel="stylesheet"/>
             </xpath>
         </template>
     </data>

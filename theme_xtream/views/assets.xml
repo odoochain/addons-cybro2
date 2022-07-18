@@ -16,8 +16,8 @@
                 <script type="text/javascript" src="/theme_xtream/static/src/js/price_filter.js"/>
             </xpath>
             <xpath expr="." position="inside">
-                <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&amp;display=swap" rel="stylesheet"/>
-                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+                <link href="https://fonts.lug.ustc.edu.cn/css2?family=Open+Sans:ital@1&amp;display=swap" rel="stylesheet"/>
+                <link href="https://fonts.lug.ustc.edu.cn/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
             </xpath>
         </template>
     </data>

@@ -15,7 +15,7 @@
             <script type="text/javascript" src="/theme_classic_store/static/src/js/snippets_trending.js"/>
         </xpath>
         <xpath expr="." position="inside">
-            <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+            <link href="https://fonts.lug.ustc.edu.cn/css2?family=Mulish:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
         </xpath>
     </template>
 </odoo>

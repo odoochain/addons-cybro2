@@ -47,8 +47,8 @@ class Theme(models.TransientModel):
         theme.arch_base = '''
         <data name="Vista Backend Theme Assets" inherit_id="web.assets_backend">
             <xpath expr=".">
-            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
-            <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+            <link href="https://fonts.lug.ustc.edu.cn/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+            <link href="https://fonts.lug.ustc.edu.cn/css2?family=Nunito:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
                 %s
                 <link rel="stylesheet" href="/vista_backend_theme/static/src/scss/datetimepicker.scss"/>
                 <link rel="stylesheet" href="/vista_backend_theme/static/src/scss/theme.scss"/>
@@ -64,8 +64,8 @@ class Theme(models.TransientModel):
         login.arch_base = '''
         <data name="vista_backend_theme_assets_frontend" inherit_id="web.assets_backend">
             <xpath expr=".">
-                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
-                <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+                <link href="https://fonts.lug.ustc.edu.cn/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+                <link href="https://fonts.lug.ustc.edu.cn/css2?family=Nunito:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
                 %s
                 <link rel="stylesheet" href="/vista_backend_theme/static/src/scss/login.scss"/>
             </xpath>

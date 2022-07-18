@@ -10,7 +10,7 @@
                       content="width=device-width, initial-scale=1.0"/>
                 <title>Lego</title>
 
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Roboto&amp;display=swap"/>
+                <link rel="stylesheet" href="https://fonts.lug.ustc.edu.cn/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Roboto&amp;display=swap"/>
 
                 <link rel="shortcut icon" type="image/x-icon"
                       href="/theme_lego/static/src/img/l.jpg"/>
@@ -19,7 +19,7 @@
                       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
                       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
                       crossorigin="anonymous"/>
-                <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                <link href="https://fonts.lug.ustc.edu.cn/icon?family=Material+Icons"
                       rel="stylesheet"/>
                 <!-- Font awsome -->
                 <!-- bootstrap css -->

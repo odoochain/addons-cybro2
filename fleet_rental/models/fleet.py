@@ -38,7 +38,7 @@ class EmployeeFleet(models.Model):
 
     rental_check_availability = fields.Boolean(default=True, copy=False)
     color = fields.Char(string='Color', default='#FFFFFF')
-    rental_reserved_time = fields.One2many('rental.fleet.reserved', 'reserved_obj', String='Reserved Time', readonly=1,
+    rental_reserved_time = fields.One2many('rental.fleet.reserved', 'reserved_obj', string='Reserved Time', readonly=1,
                                            ondelete='cascade')
     fuel_type = fields.Selection([('gasoline', 'Gasoline'),
                                   ('diesel', 'Diesel'),

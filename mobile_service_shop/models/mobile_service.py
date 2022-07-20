@@ -367,7 +367,7 @@ class MobileServiceTermsAndConditions(models.Model):
     _name = 'terms.conditions'
     _rec_name = 'terms_id'
 
-    terms_id = fields.Char(String="Terms and condition", compute="_find_id")
+    terms_id = fields.Char(string="Terms and condition", compute="_find_id")
     terms_conditions = fields.Text(string="Terms and Conditions")
 
     def _find_id(self):

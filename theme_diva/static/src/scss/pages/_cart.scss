@@ -43,14 +43,14 @@
                         display: flex;
                         align-items: center;
                         padding-bottom: 30px;
-                        @media screen and(max-width:576px) {
+                        @media screen and (max-width:576px) {
                             margin-top: 30px;
                         }
                         .wrapper {
                             max-width: 150px;
                             img {
                                 width: 100%;
-                                @media screen and(max-width:500px) {
+                                @media screen and (max-width:500px) {
                                     height: 110px;
                                     width: auto;
                                 }
@@ -59,7 +59,7 @@
                         h6 {
                             color: $color-brand3;
                             font-size: 15px;
-                            @media screen and(max-width:600px) {
+                            @media screen and (max-width:600px) {
                                 font-size: 12px;
                                 padding-left: 10px;
                             }
@@ -72,7 +72,7 @@
                                 font-size: 14px;
                                 letter-spacing: 1px;
                                 font-weight: normal;
-                                @media screen and(max-width:600px) {
+                                @media screen and (max-width:600px) {
                                     font-size: 12px;
                                     padding-left: 10px;
                                     letter-spacing: 0;
@@ -85,7 +85,7 @@
                         .rate {
                             font-size: 14px;
                             padding-bottom: 60px;
-                            @media screen and(max-width:600px) {
+                            @media screen and (max-width:600px) {
                                 font-size: 12px;
                             }
                         }
@@ -95,7 +95,7 @@
                                 color: $color-brand2;
                                 font-size: 14px;
                                 letter-spacing: 1px;
-                                @media screen and(max-width:600px) {
+                                @media screen and (max-width:600px) {
                                     font-size: 12px;
                                 }
                             }
@@ -104,7 +104,7 @@
                             position: absolute;
                             top: -45px;
                             left: 30px;
-                            @media screen and(max-width:576px) {
+                            @media screen and (max-width:576px) {
                                 padding-left: 15px;
                                 left: 10px;
                             }
@@ -224,13 +224,13 @@
                         content: "";
                         z-index: -1;
                         margin: 0 auto;
-                        //   @media screen and(max-width:500px) {
+                        //   @media screen and (max-width:500px) {
                         //     width: 400px;
                         //   }
-                        //   @media screen and(max-width:450px) {
+                        //   @media screen and (max-width:450px) {
                         //     width: 350px;
                         //   }
-                        //   @media screen and(max-width:376px) {
+                        //   @media screen and (max-width:376px) {
                         //     display: none;
                         //   }
                     }
@@ -239,7 +239,7 @@
                         font-size: 18px;
                         font-weight: 700;
                         padding: 0 10px;
-                        //   @media screen and(max-width:576px) {
+                        //   @media screen and (max-width:576px) {
                         //     font-size: 20px;
                         //   }
                     }

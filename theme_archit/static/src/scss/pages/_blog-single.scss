@@ -17,7 +17,7 @@
             vertical-align: auto;
             padding-top: 180px;
             letter-spacing: 2px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 50px;
                 padding-top: 240px;
             }
@@ -28,21 +28,21 @@
             text-align: center;
             letter-spacing: 2px;
             font-size: 40px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 30px;
             }
         }
     }
     .blog_content {
         .wrapper {
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                 padding-bottom: 20px;
             }
             padding-bottom: 100px;
             .blog_s {
                 padding: 0 186px;
                 margin-top: 100px;
-                @media screen and(max-width:992px) {
+                @media screen and (max-width:992px) {
                     padding: 0 20px;
                 }
                 .heading {
@@ -80,13 +80,13 @@
                 padding: 0 186px;
                 margin-top: 100px;
                 margin-bottom: 75px;
-                @media screen and(max-width:992px) {
+                @media screen and (max-width:992px) {
                     padding: 0 20px;
                 }
                 .top_comment {
                     padding: 60px;
                     display: flex;
-                    @media screen and(max-width:992px) {
+                    @media screen and (max-width:992px) {
                         padding: 30px 0;
                     }
                     .img_wrapper {

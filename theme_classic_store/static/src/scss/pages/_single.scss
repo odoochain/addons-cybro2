@@ -70,7 +70,7 @@
             border: none;
             margin: auto;
 
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
     
                       max-width: 350px;   
             }
@@ -82,7 +82,7 @@
 
 
     .tabs{
-        @media screen and(max-width:992px ){
+        @media screen and (max-width:992px ){
             margin-bottom: 70px;
         }
         
@@ -274,7 +274,7 @@
             a{
                 text-decoration: none;
                 color: $color-brand2;
-                font-size: 18x;
+                font-size: 18px;
                 &:hover{
                     color: $color-brand;
                 }
@@ -452,12 +452,12 @@ margin-bottom: 30px;
     background-color: $color-brand;
         left: -33px;
     
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         
         left:-13px;
     
     }
-    @media screen and(max-width:568px) {
+    @media screen and (max-width:568px) {
         
         left:0 !important;
         top: 31px !important;
@@ -474,12 +474,12 @@ margin-bottom: 30px;
     .owl-carousel .next-slide{
         background-color:  $color-brand;
         right: -33px;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
         
             right:-13px;
         
         }
-        @media screen and(max-width:568px) {
+        @media screen and (max-width:568px) {
         
             right:0 !important;
             top: 31px !important;

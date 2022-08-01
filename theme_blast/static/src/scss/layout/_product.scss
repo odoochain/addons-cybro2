@@ -1,5 +1,5 @@
 .product {
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         margin: 0 10px;
               padding-bottom: 0;
        
@@ -14,21 +14,21 @@
             transition: transform 0.2s;
             height: 350px;
             padding: 10px;
-            @media screen and(max-width:572px) {
+            @media screen and (max-width:572px) {
                    height: 495px !important;
                    }
-            @media screen and(max-width:415px) {
+            @media screen and (max-width:415px) {
                    height: 400px !important;
                    }
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                 height: 400px;
                 }
             .product_img {
                 max-width: 250px;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                   max-width: 100%;
                 }
-                @media screen and(max-width:992px) {
+                @media screen and (max-width:992px) {
                   max-width: 100%;
                 }
                 img {
@@ -156,7 +156,7 @@
                 width: 42%;
                 text-align: center;
                 padding-top: 23px;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                    top: 100%;
                    
                       }

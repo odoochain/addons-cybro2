@@ -3,13 +3,13 @@
   padding: 100px 0px 75px 0px;
   width: 100%;
   margin: 50px 0;
-  @media screen and(max-width:992px) {
+  @media screen and (max-width:992px) {
     margin-top: 0 !important;
   }
   .wrapper {
     margin-top: 50px;
     padding: 0px 50px;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
       margin-top: 0 !important;
       padding: 0 20px;
     }
@@ -23,15 +23,15 @@
       width: 300px;
       height: 300px;
       background-color: $color-brand3;
-      @media screen and(max-width:1160px) {
+      @media screen and (max-width:1160px) {
         width: 200px;
         height: 200px;
       }
-      @media screen and(max-width:992px) {
+      @media screen and (max-width:992px) {
         width: 300px;
         height: 220px;
       }
-      @media screen and(max-width:600px) {
+      @media screen and (max-width:600px) {
         width: 150px;
         height: 200px;
       }
@@ -40,15 +40,15 @@
       font-size: 30px;
       color: $color-grey;
       font-weight: 600;
-      @media screen and(max-width:600px) {
+      @media screen and (max-width:600px) {
         color: $color-white;
       }
 
-      @media screen and(max-width:500px) {
+      @media screen and (max-width:500px) {
         font-size: 22px;
         padding-top: 20px;
       }
-      @media screen and(max-width:1160px) {
+      @media screen and (max-width:1160px) {
         font-size: 25px;
       }
     }
@@ -57,14 +57,14 @@
       font-size: 30px;
       color: $color-grey;
       font-weight: 600;
-      @media screen and(max-width:600px) {
+      @media screen and (max-width:600px) {
         color: $color-white;
       }
 
-      @media screen and(max-width:500px) {
+      @media screen and (max-width:500px) {
         font-size: 22px;
       }
-      @media screen and(max-width:1160px) {
+      @media screen and (max-width:1160px) {
         font-size: 25px;
       }
     }
@@ -74,10 +74,10 @@
       font-weight: 600;
       color: $color-brand6;
       margin: 25px 0;
-      @media screen and(max-width:1160px) {
+      @media screen and (max-width:1160px) {
         font-size: 30px;
       }
-      @media screen and(max-width:500px) {
+      @media screen and (max-width:500px) {
         margin: 15px 0;
       }
     }
@@ -87,10 +87,10 @@
   max-width: 500px;
   position: relative;
   z-index: 5;
-  @media screen and(max-width:1160px) {
+  @media screen and (max-width:1160px) {
     max-width: 340px;
   }
-  @media screen and(max-width:996px) {
+  @media screen and (max-width:996px) {
     max-width: 750px;
     margin: auto;
     margin-top: 80px;
@@ -109,15 +109,15 @@
     padding-top: 20px;
     text-align: center;
     color: $color-white;
-    @media screen and(max-width:996px) {
+    @media screen and (max-width:996px) {
       top: 63px;
       right: 46px;
     }
-    @media screen and(max-width:600px) {
+    @media screen and (max-width:600px) {
       top: 14px;
       right: -3px;
     }
-    @media screen and(max-width:500px) {
+    @media screen and (max-width:500px) {
       top: -7px;
       right: -27px;
     }
@@ -141,10 +141,10 @@
   .left {
     .wrappers {
       position: relative;
-      //   @media screen and(max-width:996px) {
+      //   @media screen and (max-width:996px) {
       //     padding: 73px 109px;
       //   }
-      //   @media screen and(max-width:576px) {
+      //   @media screen and (max-width:576px) {
       //     padding: 30px 50px;
       //   }
       z-index: 1;
@@ -155,7 +155,7 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         margin-bottom: 30px;
-        @media screen and(max-width:500px) {
+        @media screen and (max-width:500px) {
           margin-bottom: 20px;
         }
       }
@@ -166,7 +166,7 @@
       font-weight: 600;
       text-transform: uppercase;
       margin-bottom: 40px;
-      @media screen and(max-width:1160px) {
+      @media screen and (max-width:1160px) {
         font-size: 25px;
       }
     }
@@ -174,7 +174,7 @@
       width: 100%;
       border-radius: 8px;
       padding-top: 20px;
-      //   @media screen and(max-width:576px) {
+      //   @media screen and (max-width:576px) {
       //     margin-top: 30px;
       //   }
     }
@@ -191,13 +191,13 @@
       // dispaly: block;
       float: left;
       margin-bottom: 40px;
-      @media screen and(max-width:1160px) {
+      @media screen and (max-width:1160px) {
         font-size: 30px;
       }
-      @media screen and(max-width:992px) {
+      @media screen and (max-width:992px) {
         font-size: 40px;
       }
-      @media screen and(max-width:500px) {
+      @media screen and (max-width:500px) {
         font-size: 30px;
       }
     }

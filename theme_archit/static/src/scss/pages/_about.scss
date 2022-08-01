@@ -17,7 +17,7 @@
             vertical-align: auto;
             padding-top: 180px;
             letter-spacing: 2px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 50px;
                 padding-top: 240px;
             }
@@ -28,7 +28,7 @@
             text-align: center;
             letter-spacing: 2px;
             font-size: 40px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 30px;
             }
         }
@@ -61,7 +61,7 @@
             position: relative;
             background-position: center;
             font-family: myFirstFont;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 height: 60vh;
                 margin-top: 20px;
             }
@@ -83,7 +83,7 @@
                 vertical-align: auto;
                 padding-top: 180px;
                 letter-spacing: 2px;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     font-size: 50px;
                     padding-top: 135px;
                 }
@@ -94,7 +94,7 @@
                 text-align: center;
                 letter-spacing: 2px;
                 font-size: 40px;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     font-size: 30px;
                 }
             }
@@ -133,7 +133,7 @@
             padding-bottom: 50px;
             .staff {
                 margin-top: 30px;
-                @media screen and(max-width:576px) {
+                @media screen and (max-width:576px) {
                     margin-left: 20px;
                 }
                 h4 {
@@ -157,7 +157,7 @@
         position: relative;
         background-position: center;
         font-family: myFirstFont;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             height: 60vh;
             margin-top: 20px;
         }
@@ -179,7 +179,7 @@
             vertical-align: auto;
             padding-top: 180px;
             letter-spacing: 2px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 50px;
                 padding-top: 135px;
             }
@@ -190,7 +190,7 @@
             text-align: center;
             letter-spacing: 2px;
             font-size: 40px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 30px;
             }
         }
@@ -202,7 +202,7 @@
             .position {
                 color: $color-brand;
                 font-size: 35px;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     padding-bottom: 20px;
                 }
             }
@@ -227,7 +227,7 @@
                     }
                 }
                 form {
-                    @media screen and(max-width:768px) {
+                    @media screen and (max-width:768px) {
                         margin-top: 20px;
                     }
                     .dropdownbox {

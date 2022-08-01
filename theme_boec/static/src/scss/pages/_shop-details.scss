@@ -1,7 +1,7 @@
 .Shop_details {
   margin-top: 80px;
   padding-bottom: 240px;
-  @media screen and(max-width:400px) {
+  @media screen and (max-width:400px) {
     padding-bottom: 100px;
   }
   background-color: $color-brand5;
@@ -39,7 +39,7 @@
       .item {
         width: 610px;
         margin: auto !important;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
           width: 100%;
         }
         img {
@@ -56,10 +56,10 @@
     #sync2 {
       position: absolute;
       bottom: -190px;
-      @media screen and(max-width:768px) {
+      @media screen and (max-width:768px) {
         bottom: -150px;
       }
-      @media screen and(max-width:400px) {
+      @media screen and (max-width:400px) {
         bottom: -80px;
       }
       // .owl-item{
@@ -75,16 +75,16 @@
         border-radius: 3px;
         text-align: center;
         cursor: pointer;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
           width: 159px;
         }
-        @media screen and(max-width:568px) {
+        @media screen and (max-width:568px) {
           width: 140px;
         }
-        @media screen and(max-width:568px) {
+        @media screen and (max-width:568px) {
           width: 110px;
         }
-        @media screen and(max-width:400px) {
+        @media screen and (max-width:400px) {
           width: 80px;
         }
         img {
@@ -189,7 +189,7 @@
       margin-top: 40px;
       display: flex;
       justify-content: space-evenly;
-      @media screen and(max-width:992px) {
+      @media screen and (max-width:992px) {
         display: block;
         text-align: center;
       }
@@ -220,7 +220,7 @@
         -webkit-transition: all, 0.6s;
         -o-transition: all, 0.6s;
         transition: all, 0.6s;
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
           margin-top: 30px;
         }
         .custom-radios {
@@ -317,12 +317,12 @@
       display: flex;
       justify-content: center;
       padding-top: 40px;
-      @media screen and(max-width:576px) {
+      @media screen and (max-width:576px) {
         display: block !important;
         text-align: center;
       }
       a {
-        @media screen and(max-width:576px) {
+        @media screen and (max-width:576px) {
           display: block !important;
           text-align: center;
           &:first-child {
@@ -352,13 +352,13 @@
         content: "";
         z-index: -1;
         margin: 0 auto;
-        @media screen and(max-width:500px) {
+        @media screen and (max-width:500px) {
           width: 400px;
         }
-        @media screen and(max-width:450px) {
+        @media screen and (max-width:450px) {
           width: 350px;
         }
-        @media screen and(max-width:376px) {
+        @media screen and (max-width:376px) {
           display: none;
         }
       }
@@ -367,7 +367,7 @@
         font-size: 25px;
         font-weight: 700;
         padding: 0 10px;
-        @media screen and(max-width:576px) {
+        @media screen and (max-width:576px) {
           font-size: 20px;
         }
       }

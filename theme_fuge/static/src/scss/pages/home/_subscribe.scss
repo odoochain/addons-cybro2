@@ -8,11 +8,11 @@
     .card{
         background: transparent;
         border: none;
-    @media screen and(max-width:767px){
+    @media screen and (max-width:767px){
         margin: 0px auto;
         width: 80%;
         padding-bottom: 50px;
-        @media screen and(max-width:767px){
+        @media screen and (max-width:767px){
                 
             padding-top: 30px;
             margin-bottom: 30px;
@@ -23,7 +23,7 @@
             padding: 0;
             margin-top: 60px;
             padding-left: 100px;
-            @media screen and(max-width:767px){
+            @media screen and (max-width:767px){
                 
                 padding-left: 70px;
             }
@@ -49,7 +49,7 @@
             display: grid;
             grid-template-columns: 2fr 1fr;
 
- @media screen and(max-width:576px){
+ @media screen and (max-width:576px){
             
     grid-template-columns: 1fr 1fr;
         }
@@ -84,11 +84,11 @@
         margin-left: 15px;
         margin-right: 15px;
 
-        @media screen and(max-width:767px){
+        @media screen and (max-width:767px){
             margin-left: -15px;
             width: 105%;
         }
-        @media screen and(max-width:619px){
+        @media screen and (max-width:619px){
             margin-left: -15px;
             width: 105%;
         }

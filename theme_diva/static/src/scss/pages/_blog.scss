@@ -1,6 +1,6 @@
 .blog {
     margin-bottom: 50px;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         margin-bottom: 40px;
     }
     .wrapper {
@@ -12,7 +12,7 @@
                         color: $color-brand3;
                         font-size: 35px;
                         font-weight: 400;
-                        @media screen and(max-width:768px) {
+                        @media screen and (max-width:768px) {
                             font-size: 30px;
                         }
                     }

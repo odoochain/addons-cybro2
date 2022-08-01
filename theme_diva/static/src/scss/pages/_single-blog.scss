@@ -1,18 +1,18 @@
 .blog_single {
     margin-bottom: 50px;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         margin-bottom: 40px;
     }
     .wrapper {
         padding-bottom: 40px;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             padding-bottom: 0px;
         }
         .Blog_content {
             margin-bottom: 30px;
             .Blog_heading {
                 margin-top: 20px;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     font-size: 30px;
                 }
                 h3 {

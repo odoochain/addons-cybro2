@@ -29,7 +29,7 @@
             }
             .card-body {
                 padding: 15px 0;
-                @media screen and(max-width:576px) {
+                @media screen and (max-width:576px) {
                     text-align: center;
                 }
                 .card-title {
@@ -38,7 +38,7 @@
                         font-size: 25px;
                         font-weight: 500;
                         text-decoration: none;
-                        @media screen and(max-width:992px) {
+                        @media screen and (max-width:992px) {
                             font-size: 20px;
                         }
                         &:hover {
@@ -50,7 +50,7 @@
                     font-size: 23px !important;
                     font-weight: normal;
                     color: $color-brand;
-                    @media screen and(max-width:992px) {
+                    @media screen and (max-width:992px) {
                         font-size: 21px;
                     }
                 }

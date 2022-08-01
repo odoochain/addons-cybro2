@@ -1,8 +1,8 @@
 .contact{
-    @media screen and(max-width:492px) {
+    @media screen and (max-width:492px) {
         margin: 0 20px;
     }
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         padding-top: 75px;
         padding-bottom: 0;
      }
@@ -10,7 +10,7 @@
         margin-bottom: 50px;
         .top{
             padding-top: 50px;
-            @media screen and(max-width:492px) {
+            @media screen and (max-width:492px) {
                padding-top: 0px;
             }
         }
@@ -55,7 +55,7 @@
                 -webkit-box-shadow: 1px 1px 14px 11px rgba(137, 137, 137, 0.25);
                 -moz-box-shadow: 1px 1px 14px 11px rgba(137, 137, 137, 0.25);
 
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                   margin-right: 0;
                   margin-bottom: 40px;
                 }

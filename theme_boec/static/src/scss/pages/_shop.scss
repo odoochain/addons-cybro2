@@ -1,25 +1,25 @@
 .shop {
   margin: 80px 0;
-  @media screen and(max-width:576px) {
+  @media screen and (max-width:576px) {
     margin: 50px 0;
   }
   .top {
     width: 100%;
     justify-content: space-between;
     padding: 20px 0;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
       display: block !important;
     }
-    @media screen and(max-width:576px) {
+    @media screen and (max-width:576px) {
       padding-left: 20px;
     }
     .left {
       font-size: 20px;
       letter-spacing: 0.5px;
-      @media screen and(max-width:992px) {
+      @media screen and (max-width:992px) {
         font-size: 16px;
       }
-      @media screen and(max-width:768px) {
+      @media screen and (max-width:768px) {
         margin-bottom: 20px;
       }
     }

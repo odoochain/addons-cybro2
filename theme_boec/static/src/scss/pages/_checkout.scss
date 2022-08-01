@@ -24,10 +24,10 @@
         background: linear-gradient(45deg, #77b7e8 0%, #d7ebff 60%, #94b2d5 100%);
         background: linear-gradient(45deg, #77b7e8 0%, #d7ebff 60%, #94b2d5 100%);
         background: linear-gradient(45deg, #77b7e8 0%, #d7ebff 60%, #94b2d5 100%);
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
             grid-template-columns: 1fr 1fr;
         }
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             grid-template-columns: 1fr;
         }
     }
@@ -38,10 +38,10 @@
             max-width: 500px;
             // margin: -50px 0 -85px -65px;
             margin: auto;
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                 max-width: 100%;
             }
-            //     @media screen and(max-width:768px) {
+            //     @media screen and (max-width:768px) {
             // max-width: 500px;
             //     }
             img {
@@ -71,7 +71,7 @@
         width: auto;
         float: right;
         padding: 95px 50px 25px 0;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             padding: 30px;
         }
     }

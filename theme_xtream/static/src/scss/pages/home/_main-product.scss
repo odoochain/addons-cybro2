@@ -2,7 +2,7 @@
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             grid-template-columns: 1fr;
         }
         .main_left {
@@ -30,7 +30,7 @@
                 border: none !important;
                 margin-left: 65px;
                 z-index: 3;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     padding-top: 100px;
                 }
                 .card-title {
@@ -39,7 +39,7 @@
                     font-weight: bold;
                     padding-bottom: 20px;
                     text-transform: uppercase;
-                    @media screen and(max-width:768px) {
+                    @media screen and (max-width:768px) {
                         font-size: 30px !important;
                     }
                 }
@@ -73,7 +73,7 @@
                 border: none !important;
                 margin-left: 65px;
                 z-index: 3;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     padding-top: 100px;
                     padding-bottom: 100px;
                 }
@@ -83,7 +83,7 @@
                     font-weight: bold;
                     padding-bottom: 20px;
                     text-transform: uppercase;
-                    @media screen and(max-width:768px) {
+                    @media screen and (max-width:768px) {
                         font-size: 30px !important;
                     }
                 }

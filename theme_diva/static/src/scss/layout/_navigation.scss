@@ -14,11 +14,11 @@
     border-color: transparent;
     border-bottom-color: transparent;
     border-bottom-color: rgb(255, 255, 255);
-    @media screen and(max-width:992px) {
+    @media screen and (max-width:992px) {
       border: transparent !important;
     }
     form {
-      @media screen and(max-width:992px) {
+      @media screen and (max-width:992px) {
         display: none;
       }
       ul {
@@ -37,7 +37,7 @@
           }
           span {
             color: $color-white;
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
               color: $color-black !important;
             }
           }
@@ -48,7 +48,7 @@
   .navbar-nav {
     margin-right: auto;
     color: $color-white;
-    @media screen and(max-width:992px) {
+    @media screen and (max-width:992px) {
       margin: 0;
       width: 100%;
     }
@@ -64,7 +64,7 @@
       .nav-link {
         color: var(--primary-color);
         text-transform: uppercase;
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
           color: $color-grey !important;
           &:hover {
             color: $color-black !important;
@@ -75,13 +75,13 @@
   }
   .bg-dark {
     background-color: transparent !important;
-    @media screen and(max-width:992px) {
+    @media screen and (max-width:992px) {
       background-color: $color-white !important;
       margin-top: -16px;
     }
   }
   .mobileMenu {
-    @media screen and(max-width:414px) {
+    @media screen and (max-width:414px) {
       width: 65% !important;
     }
   }
@@ -124,13 +124,13 @@
     }
   }
   .mid_section {
-    @media screen and(max-width:992px) {
+    @media screen and (max-width:992px) {
       margin-top: -5px;
       padding-bottom: 25px;
     }
     .brand {
       padding-top: 10px;
-      @media screen and(max-width:992px) {
+      @media screen and (max-width:992px) {
         // text-align: center;
         // margin-top: -25px;
       }
@@ -139,7 +139,7 @@
         font-size: 60px;
         font-family: $font-brand;
         text-decoration: none;
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
           font-size: 80px;
         }
       }
@@ -152,7 +152,7 @@
       align-items: center;
       padding: 2px 20px;
       margin-top: 30px;
-      @media screen and(max-width:992px) {
+      @media screen and (max-width:992px) {
         font-size: 80px;
         margin-top: 0px;
         width: 65%;
@@ -180,7 +180,7 @@
       display: flex;
       justify-content: end;
       align-items: center;
-      @media screen and(max-width:992px) {
+      @media screen and (max-width:992px) {
         justify-content: center;
       }
       a {
@@ -217,7 +217,7 @@
             border-radius: 0;
             border: 0;
             top: 160%;
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
               text-align: center;
             }
           }
@@ -244,11 +244,11 @@
     background-color: transparent !important;
     position: absolute;
     z-index: 1230;
-    @media screen and(max-width:992px) {
+    @media screen and (max-width:992px) {
       right: 40px !important;
       top: 40px;
     }
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
       right: 40px !important;
       top: 60px;
     }

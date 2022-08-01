@@ -14,13 +14,13 @@
             }
         }
         .about_details{
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 margin-top: 50px;
             }
             .wrapper{
                 margin-left: 50px;
 
-                @media screen and(max-width:992px) {
+                @media screen and (max-width:992px) {
                    margin-left: 0;
                 }
                 .red{

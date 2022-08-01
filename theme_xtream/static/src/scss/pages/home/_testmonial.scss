@@ -9,14 +9,14 @@
             color: $color-brand;
             text-transform: uppercase;
             padding-bottom: 30px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 30px;
             }
         }
         .testimonial_content {
             padding: 0px 111px;
             padding-top: 30px;
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                 padding-left: 0;
                 padding-right: 0;
             }
@@ -35,7 +35,7 @@
                 color: $color-font;
                 text-align: center;
                 padding: 0 100px;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     padding: 0 50px;
                 }
             }
@@ -90,13 +90,13 @@
             left: 0px !important;
             transform: rotate(90deg);
             background-color: transparent;
-            @media screen and(max-width:1000px) {
+            @media screen and (max-width:1000px) {
                 left: 150px;
             }
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 left: 100px;
             }
-            @media screen and(max-width:600px) {
+            @media screen and (max-width:600px) {
                 left: 75px;
             }
         }

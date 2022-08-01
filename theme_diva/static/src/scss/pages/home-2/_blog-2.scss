@@ -1,12 +1,12 @@
 .blog_2 {
     margin-top: 100px;
 
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         margin-top: 60px;
     }
     .wrapper {
         padding-bottom: 70px;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             padding-bottom: 0;
         }
         .blog_content {

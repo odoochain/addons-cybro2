@@ -1,5 +1,5 @@
 .features{
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         margin: 0 20px;
         padding-bottom: 0;
         padding-top: 0px;
@@ -16,7 +16,7 @@
             .feature_details{
                 padding-right: 20px;
 
-                @media screen and(max-width:992px) {
+                @media screen and (max-width:992px) {
                  text-align: left;
                   
                 }
@@ -32,7 +32,7 @@
             .feature_details_img{
                 max-width: 50px;
                 margin-left: 10px;
-                @media screen and(max-width:992px) {
+                @media screen and (max-width:992px) {
              
                 }
               
@@ -43,7 +43,7 @@
         }
         .feature_img{
             max-width: 400px;
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                 margin: 50px 0;
                 max-width: 100%;
             }

@@ -27,7 +27,7 @@
         .wrapper {
             position: relative;
             .preview_details {
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     margin-top: 70px;
                 }
                 h5 {
@@ -166,7 +166,7 @@
         }
     }
     .trending_body1 {
-        @media screen and(max-width:576px) {
+        @media screen and (max-width:576px) {
             //  max-width: 400px;
         }
         .outer {
@@ -177,7 +177,7 @@
             display: block;
         }
         #thumbs {
-            @media screen and(max-width:576px) {
+            @media screen and (max-width:576px) {
                 display: none;
             }
         }
@@ -231,7 +231,7 @@
     color: $color-brand;
     text-transform: uppercase;
     padding-bottom: 30px;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         font-size: 30px;
     }
 }

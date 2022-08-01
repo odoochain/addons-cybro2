@@ -20,7 +20,7 @@
         animation-delay: 1.6s;
         opacity: 0;
 
-        @media screen and(max-width:576px) {
+        @media screen and (max-width:576px) {
             padding: 10px 19px;
             color: #fff !important;
             font-size: 13px;
@@ -44,7 +44,7 @@
         color: $color-white;
         border: 1px solid !important;
         border-color: transparent !important;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             padding: 8px 8px !important;
             font-size: 14px;
         }

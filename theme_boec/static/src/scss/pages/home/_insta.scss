@@ -1,18 +1,18 @@
 .insta {
     margin: 100px 0;
     padding-top: 50px;
-    @media screen and(max-width:567px) {
+    @media screen and (max-width:567px) {
         padding-top: 0;
     }
     .wrapper {
         .gallery {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                 grid-template-columns: 1fr 1fr;
                 margin-bottom: 50px;
             }
-            @media screen and(max-width:400px) {
+            @media screen and (max-width:400px) {
                 grid-template-columns: 1fr;
             }
             .insta_img {

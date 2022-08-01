@@ -14,7 +14,7 @@
         background-repeat: no-repeat;
     
 
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             height: 70vh;
         }
     
@@ -26,12 +26,12 @@
             border: none !important;
 
 
-            @media screen and(max-width:600px) {
+            @media screen and (max-width:600px) {
               padding-left: 40px;
             }
             
 
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 padding-top:100px;
             }
             .card-title{
@@ -61,7 +61,7 @@
          width: 100%;
          background-repeat: no-repeat;
 
-         @media screen and(max-width:768px) {
+         @media screen and (max-width:768px) {
             height: 70vh;
            
         }
@@ -76,12 +76,12 @@
             border: none !important;
 
             
-            @media screen and(max-width:600px) {
+            @media screen and (max-width:600px) {
                 padding-left: 40px;
               }
             
 
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 padding-top:100px;
                 padding-bottom: 0;
             }
@@ -114,7 +114,7 @@
          background-repeat: no-repeat;
 
 
-         @media screen and(max-width:768px) {
+         @media screen and (max-width:768px) {
             height: 70vh;
         }
 
@@ -128,11 +128,11 @@
             animation-duration: 3s;
 
             
-            @media screen and(max-width:600px) {
+            @media screen and (max-width:600px) {
                 padding-left: 40px;
               }
 
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 padding-top:50px;
                 padding-bottom: 100px;
             }
@@ -261,14 +261,14 @@
     transform: rotate(89deg);
     background-color: transparent;
 
-    @media screen and(max-width:1150px){
+    @media screen and (max-width:1150px){
             left: 0 !important;
         
     }
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
        
     }
-    @media screen and(max-width:600px) {
+    @media screen and (max-width:600px) {
        
      }
 }

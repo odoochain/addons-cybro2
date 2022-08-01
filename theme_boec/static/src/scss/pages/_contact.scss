@@ -7,7 +7,7 @@
             padding-bottom: 34.25%;
             position: relative;
             height: 500px;
-            @media screen and(max-width:576px) {
+            @media screen and (max-width:576px) {
                 height: 400px;
             }
         }
@@ -21,7 +21,7 @@
     }
     .contact_main {
         margin-top: 100px;
-        @media screen and(max-width:576px) {
+        @media screen and (max-width:576px) {
             margin-top: 70px;
         }
         .contact_details {
@@ -65,7 +65,7 @@
         }
         .contact_form {
             form {
-                @media screen and(max-width:576px) {
+                @media screen and (max-width:576px) {
                     margin-top: 40px;
                 }
                 .form-group {

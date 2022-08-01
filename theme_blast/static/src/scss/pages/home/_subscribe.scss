@@ -1,5 +1,5 @@
 .sub{
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
   padding-top: 75px;
   padding-bottom: 0;
                    }
@@ -16,12 +16,12 @@
                 box-shadow: 1px 17px 14px 6px rgba(137, 137, 137, 0.35);
                 -webkit-box-shadow: 1px 17px 14px 6px rgba(137, 137, 137, 0.35);
                 -moz-box-shadow: 1px 17px 14px 6px rgba(137, 137, 137, 0.35);
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                 width: 90%;
                     }
 
 
-                    @media screen and(max-width:572px) {
+                    @media screen and (max-width:572px) {
                         width: 95%;
                         height: 55px;
                             }
@@ -29,14 +29,14 @@
                     border-radius: 50px;
                     height: 70px;
                     padding: 0 50px;
-                    @media screen and(max-width:572px) {
+                    @media screen and (max-width:572px) {
                  height: 55px;
                             }
                 }
 
                 .input-group-append {
                     margin-left: -168px;
-                    @media screen and(max-width:572px) {
+                    @media screen and (max-width:572px) {
                         margin-left: -50px;
                             }
                     z-index: 3;
@@ -51,10 +51,10 @@
                     color: $color-white;
                     border: 1px solid;
                     font-weight: 700;
-                    @media screen and(max-width:572px) {
+                    @media screen and (max-width:572px) {
                         padding: 0 25px;
                             }
-                            @media screen and(max-width:420px) {
+                            @media screen and (max-width:420px) {
                                 padding: 0 15px;
                                 font-size: 14px;
                                     }

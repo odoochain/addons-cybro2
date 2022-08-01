@@ -7,7 +7,7 @@ background-attachment: fixed;
    background-position: center;
    position: relative;
 
-   @media screen and(max-width:992px) {
+   @media screen and (max-width:992px) {
 height: auto; 
    }
    .wrapper {
@@ -16,14 +16,14 @@ height: auto;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
 
-      @media screen and(max-width:768px) {
+      @media screen and (max-width:768px) {
          grid-template-columns: 1fr 1fr;
       }
 
-      @media screen and(max-width:600px) {
+      @media screen and (max-width:600px) {
          grid-template-columns: 1fr 1fr;
       }
-      // @media screen and(max-width:450px) {
+      // @media screen and (max-width:450px) {
       //    grid-template-columns: 2fr;
       // }
 
@@ -33,7 +33,7 @@ height: auto;
 background-color: #160a005c;
          .g_c_wrapper {
 
-            @media screen and(max-width:600px) {
+            @media screen and (max-width:600px) {
           padding-left: 20px;
           padding-right: 20px;
             }
@@ -53,12 +53,12 @@ background-color: #160a005c;
    margin-top: 350px;
    padding: 0px 60px;
 
-   @media screen and(max-width:1122px) {
+   @media screen and (max-width:1122px) {
       margin-top: 290px;
       padding: 0px 25px; 
    }
 
-   @media screen and(max-width:768px) {
+   @media screen and (max-width:768px) {
       margin-top: 60px;
       padding: 0px 10px; 
    }
@@ -69,11 +69,11 @@ background-color: #160a005c;
 .tp {
    margin-top: 180px;
    padding: 0px 44px;
-   @media screen and(max-width:992px) {
+   @media screen and (max-width:992px) {
       margin-top: 100px;    
       padding: 0px 25px; 
    }
-   @media screen and(max-width:768px) {
+   @media screen and (max-width:768px) {
       margin-top: 60px;
       padding: 0px 10px; 
    }

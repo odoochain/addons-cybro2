@@ -103,12 +103,12 @@
             border: none !important; 
             color: $color-white;
         }
-        @media screen  and(max-width:991px){
+        @media screen and (max-width:991px){
 
             width: 100% !important;
             
         }
-        @media screen  and(max-width:767px){
+        @media screen and (max-width:767px){
 
             width: 80% !important;
             
@@ -148,7 +148,7 @@
             color: #ffffff !important;
         }
 
-        @media screen and(max-width:991px) {
+        @media screen and (max-width:991px) {
             width: 100%;
         }
     }
@@ -166,7 +166,7 @@
             color: #ffffff !important;
         }
 
-        @media screen and(max-width:991px) {
+        @media screen and (max-width:991px) {
             width: 100%;
         }
     }

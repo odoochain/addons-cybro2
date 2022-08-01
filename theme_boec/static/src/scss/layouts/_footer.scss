@@ -1,7 +1,7 @@
 .footer {
     background-color: $color-brand6;
     padding: 80px 0;
-    @media screen and(max-width:992px) {
+    @media screen and (max-width:992px) {
         padding-bottom: 40px;
         padding-top: 60px;
     }
@@ -113,12 +113,12 @@
             margin-bottom: 8px;
         }
         .i_wrapper {
-            @media screen and(max-width:576px) {
+            @media screen and (max-width:576px) {
                 margin-top: 50px;
             }
         }
         .s_wrapper {
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                 margin-top: 50px;
             }
         }

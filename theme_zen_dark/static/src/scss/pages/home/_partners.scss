@@ -11,7 +11,7 @@
             font-weight: 700;
             
             margin-bottom: 10px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 30px;
                  }
     
@@ -24,7 +24,7 @@
         margin-top: 30px;
         padding: 60px;
 
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
 padding: 0;
 margin-top: 60px;
                 }
@@ -46,14 +46,14 @@ margin-top: 60px;
                 }
             }
 
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 &:nth-child(2) {
                     a {
                         border-right-color: transparent !important;
                     }
                 }
             }
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 &:nth-child(6) {
                     a {
                         border-right-color: transparent !important;
@@ -103,7 +103,7 @@ margin-top: 60px;
                 }
             }
 
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 &:nth-child(11) {
                     a {
               

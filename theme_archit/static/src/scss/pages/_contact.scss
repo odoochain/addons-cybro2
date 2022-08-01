@@ -18,7 +18,7 @@
             vertical-align: auto;
             padding-top: 180px;
             letter-spacing: 2px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 50px;
                 padding-top: 240px;
             }
@@ -29,7 +29,7 @@
             text-align: center;
             letter-spacing: 2px;
             font-size: 40px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 30px;
             }
         }
@@ -70,7 +70,7 @@
                     margin-left: auto;
                     padding-top: 15px;
                     display: flex;
-                    @media screen and(max-width:992px) {
+                    @media screen and (max-width:992px) {
                         margin: auto;
                     }
                     a {
@@ -92,7 +92,7 @@
             }
             .post_replay {
                 form {
-                    @media screen and(max-width:768px) {
+                    @media screen and (max-width:768px) {
                         margin-top: 70px;
                     }
                     .form-group {

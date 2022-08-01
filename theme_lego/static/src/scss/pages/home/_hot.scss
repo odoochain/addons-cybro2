@@ -24,10 +24,10 @@
       text-align: center;
       position: relative;
       padding: 33px 109px;
-      @media screen and(max-width:996px) {
+      @media screen and (max-width:996px) {
         padding: 73px 109px;
       }
-      @media screen and(max-width:576px) {
+      @media screen and (max-width:576px) {
         padding: 30px 50px;
       }
       z-index: 1;
@@ -47,7 +47,7 @@
       width: 100%;
       border-radius: 8px;
       margin-top: 65px;
-      @media screen and(max-width:576px) {
+      @media screen and (max-width:576px) {
         margin-top: 30px;
       }
     }

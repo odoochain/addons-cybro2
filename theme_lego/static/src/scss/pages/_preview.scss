@@ -1,6 +1,6 @@
 .Poduct_preview {
     margin-top: 100px;
-    @media screen and(max-width:996px) {
+    @media screen and (max-width:996px) {
         margin-top: 10px;
     }
     .preview_img {
@@ -8,7 +8,7 @@
         position: relative;
         .wrapper {
             max-width: 600px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 padding-bottom: 30px;
             }
             img {
@@ -24,7 +24,7 @@
             display: block;
             font-weight: 700;
             margin: 2px;
-            @media screen and(max-width:576px) {
+            @media screen and (max-width:576px) {
                 height: 18px;
                 width: 5px;
                 margin: 1px;
@@ -35,7 +35,7 @@
             width: 7px;
             border-radius: 8px;
             background-color: $primary-color3;
-            @media screen and(max-width:576px) {
+            @media screen and (max-width:576px) {
                 height: 25px;
                 width: 5px;
             }
@@ -47,13 +47,13 @@
                 bottom: 1%;
                 left: 75%;
                 transform: rotate(89deg);
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     bottom: 0;
                 }
-                // @media screen and(max-width:768px) {
+                // @media screen and (max-width:768px) {
                 //    left: 100px;
                 // }
-                // @media screen and(max-width:600px) {
+                // @media screen and (max-width:600px) {
                 //     left: 75px;
                 //  }
             }
@@ -191,12 +191,12 @@
             }
             table {
                 color: $pfont;
-                @media screen and(max-width:600px) {
+                @media screen and (max-width:600px) {
                     padding: 0 15px;
                 }
             }
             .comments {
-                @media screen and(max-width:600px) {
+                @media screen and (max-width:600px) {
                     padding: 0 15px;
                 }
                 .over_all {

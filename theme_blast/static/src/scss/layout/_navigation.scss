@@ -4,7 +4,7 @@
 .navbar {
     padding: 10px 0;
     background: transparent !important;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         margin: 0 20px;
     }
     .navbar-collapse {
@@ -13,7 +13,7 @@
     }
     .navbar-nav {
         margin-left: auto;
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
             background: #00000078;
         }
         .nav-item {
@@ -38,7 +38,7 @@
         img {
             width: 100%;
         }
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
         }
     }
     .brand-shop {

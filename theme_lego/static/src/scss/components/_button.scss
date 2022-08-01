@@ -78,7 +78,7 @@
         padding: 14px 27px;
         font-weight: 600;
         border-radius: 25px;
-        @media screen and(max-width:996px) {
+        @media screen and (max-width:996px) {
             top: 75%;
         }
         &:hover {
@@ -174,7 +174,7 @@
             text-decoration: none;
             color: $white;
         }
-        @media screen and(max-width:474px) {
+        @media screen and (max-width:474px) {
             margin-bottom: 15px;
             padding: 14px 38px;
         }

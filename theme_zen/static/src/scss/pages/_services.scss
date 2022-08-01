@@ -3,7 +3,7 @@
   position: relative;
   background-color: #fff;
   margin-bottom: 400px;
-  @media screen and(max-width:768px) {
+  @media screen and (max-width:768px) {
     margin-bottom: 800px;
        }
 
@@ -22,7 +22,7 @@
             background-repeat: no-repeat;
             background-position: center;
       
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
               height: auto;
             }
             .card {
@@ -36,22 +36,22 @@
               // animation-delay: 1s;
               // animation-duration: 3s;
               text-transform: uppercase;
-              @media screen and(max-width:996px) {
+              @media screen and (max-width:996px) {
                 display: block;
                 padding-top: 200px;
                 padding-left: 100px;
               }
-              @media screen and(max-width:768px) {
+              @media screen and (max-width:768px) {
                 display: block;
                 padding-top: 200px;
                 padding-left: 100px;
               }
-              @media screen and(max-width:572px) {
+              @media screen and (max-width:572px) {
                 display: block;
                 padding-top: 100px;
                 padding-left: 25px;
               }
-              @media screen and(max-width:450px) {
+              @media screen and (max-width:450px) {
                 display: block;
                 padding-top: 100px;
                 padding-left: 20px;
@@ -60,13 +60,13 @@
                 font-size: 2.5vw;
                 font-weight: 700;
                 color: $color-brand2;
-                @media screen and(max-width:996px) {
+                @media screen and (max-width:996px) {
                   font-size: 25px;
                 }
-                @media screen and(max-width:572px) {
+                @media screen and (max-width:572px) {
                   font-size: 18px;
                 }
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                   font-size: 25px;
                 }
               }
@@ -74,13 +74,13 @@
                 color: $color-white;
                 font-size: 3.5vw;
                 font-weight: bolder;
-                @media screen and(max-width:996px) {
+                @media screen and (max-width:996px) {
                   font-size: 40px;
                 }
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                   font-size: 40px;
                 }
-                @media screen and(max-width:572px) {
+                @media screen and (max-width:572px) {
                   font-size: 30px;
                 }
               }
@@ -94,10 +94,10 @@
                   padding-bottom: 40px;
                   letter-spacing: 0px;
       
-                  @media screen and(max-width:572px) {
+                  @media screen and (max-width:572px) {
                     font-size: 20px;
                   }
-                  @media screen and(max-width:415px) {
+                  @media screen and (max-width:415px) {
                     font-size: 14px;
                   }
                 }
@@ -111,7 +111,7 @@
             height: 100vh;
             background-color: #b22126;
       
-            @media screen and(max-width:996px) {
+            @media screen and (max-width:996px) {
               display: none;
             }
             p {
@@ -149,7 +149,7 @@
               // animation-delay: 1s;
               // animation-duration: 3s;
               text-transform: uppercase;
-              //@media screen and(max-width:768px){
+              //@media screen and (max-width:768px){
               //padding-top:50px;
               //padding-bottom: 100px;
               // }
@@ -182,7 +182,7 @@
           padding: 100px 0;
       
       
-          @media screen and(max-width:992px) {
+          @media screen and (max-width:992px) {
             padding: 50px 0px;
                        }
           .heading{
@@ -195,14 +195,14 @@
                   font-weight: 700;
                   margin-bottom: 30px !important;
       
-                  @media screen and(max-width:768px) {
+                  @media screen and (max-width:768px) {
                     font-size: 40px;
                      }
                 }
           }
           .wrapper{
               padding: 0 60px;
-              @media screen and(max-width:992px) {
+              @media screen and (max-width:992px) {
                 padding: 0;
                  }
               .service_bg{
@@ -245,7 +245,7 @@
                   margin-top: 50px;
       
                   .wrapper_brand{
-                    @media screen and(max-width:768px) {
+                    @media screen and (max-width:768px) {
                  padding-left: 30px;
                        }
                   }
@@ -266,7 +266,7 @@
                         letter-spacing: 2px;
                       }
       
-                      // @media screen and(max-width:992px) {
+                      // @media screen and (max-width:992px) {
                       //   padding-left: 50px;
                       //              }
                     }
@@ -315,7 +315,7 @@
              background-color: $color-brand2;
             .skill_img{
                 max-width: 750px;
-                @media screen and(max-width:992px) {
+                @media screen and (max-width:992px) {
                   max-width: 100%;
                 }
                 
@@ -329,7 +329,7 @@
         // transform: translate(0px,35%); /* Standard syntax */
         padding-top: 100px;
       
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
         padding-top: 50px;
         padding-bottom: 40px;
            }
@@ -393,7 +393,7 @@
         .our_service{
       
           padding: 100px 0;
-          @media screen and(max-width:992px) {
+          @media screen and (max-width:992px) {
             padding-top: 50px;
             padding-bottom: 0;
                        }
@@ -409,7 +409,7 @@
             font-weight: 700;
             margin-bottom: 10px;
       
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
               font-size: 40px;
                }
       
@@ -426,7 +426,7 @@
       
         .wrapper {
           margin-top: 75px;
-          @media screen and(max-width:992px) {
+          @media screen and (max-width:992px) {
       margin-top: 0;
                        }
           
@@ -498,7 +498,7 @@
                   font-weight: 700;
                   
                   margin-bottom: 10px;
-                  @media screen and(max-width:768px) {
+                  @media screen and (max-width:768px) {
                       font-size: 30px;
                        }
           
@@ -511,7 +511,7 @@
               margin-top: 30px;
               padding: 60px;
       
-              @media screen and(max-width:768px) {
+              @media screen and (max-width:768px) {
       padding: 0;
       margin-top: 60px;
                       }
@@ -533,14 +533,14 @@
                       }
                   }
       
-                  @media screen and(max-width:768px) {
+                  @media screen and (max-width:768px) {
                       &:nth-child(2) {
                           a {
                               border-right-color: transparent !important;
                           }
                       }
                   }
-                  @media screen and(max-width:768px) {
+                  @media screen and (max-width:768px) {
                       &:nth-child(6) {
                           a {
                               border-right-color: transparent !important;
@@ -590,7 +590,7 @@
                       }
                   }
       
-                  @media screen and(max-width:768px) {
+                  @media screen and (max-width:768px) {
                       &:nth-child(11) {
                           a {
                     
@@ -654,7 +654,7 @@
   bottom: 40px;
   z-index: 999;
   right: 26%;
-  @media screen and(max-width:650px) {
+  @media screen and (max-width:650px) {
     right: 40%;
     bottom: 20px;
   }

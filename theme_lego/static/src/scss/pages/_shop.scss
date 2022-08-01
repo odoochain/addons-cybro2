@@ -1,6 +1,6 @@
 .main_product {
     margin-top: 100px;
-    @media screen and(max-width:600px) {
+    @media screen and (max-width:600px) {
         margin-top: 70px;
         padding: 0 10px;
     }
@@ -41,7 +41,7 @@
                 text-align: center;
                 display: flex;
                 justify-content: end;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     justify-content: left;
                 }
                 .pagination {

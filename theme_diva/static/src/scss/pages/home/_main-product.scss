@@ -61,7 +61,7 @@
           color: $color-white;
           text-transform: uppercase;
           letter-spacing: 1px;
-          @media screen and(max-width:572px) {
+          @media screen and (max-width:572px) {
             font-size: 35px;
           }
         }
@@ -74,7 +74,7 @@
       }
       .main_p_img {
         max-width: 750px;
-        @media screen and(max-width:572px) {
+        @media screen and (max-width:572px) {
           max-width: 350px;
           margin: auto;
         }

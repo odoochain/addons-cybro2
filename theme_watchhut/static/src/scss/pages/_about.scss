@@ -6,24 +6,24 @@
            color: black;
            letter-spacing: 1em;
 
-           @media screen and(max-width:992px) {
+           @media screen and (max-width:992px) {
             font-size:45px;
             letter-spacing: .5em;
            }
-           @media screen and(max-width:992px) {
+           @media screen and (max-width:992px) {
             font-size:45px;
 
             letter-spacing: .2em;
            }
 
-           @media screen and(max-width:992px) {
+           @media screen and (max-width:992px) {
             font-size:35px;
            }
            p{
                font-size: 14px;
                margin-top: -10px;
                letter-spacing: 2px !important;
-               @media screen and(max-width:992px) {
+               @media screen and (max-width:992px) {
                 margin-top: 10px;
                }
            }

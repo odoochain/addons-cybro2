@@ -10,14 +10,14 @@
       color: $color-brand;
       text-transform: uppercase;
       padding-bottom: 30px;
-      @media screen and(max-width:768px){
+      @media screen and (max-width:768px){
         font-size: 30px;
            }
   }
   .categories{
     display: flex;
     justify-content: center;
-    @media screen and(max-width:768px){
+    @media screen and (max-width:768px){
     display: block;
            }
   }
@@ -62,11 +62,11 @@
                 display: block;
 bottom: 45%;
                 z-index: 3;
-                @media screen and(max-width:992px){
+                @media screen and (max-width:992px){
                     left: 35%;
 bottom: 43%;
                 }
-                @media screen and(max-width:992px){
+                @media screen and (max-width:992px){
                     left: 44%;
 bottom: 43%;
                 }
@@ -75,7 +75,7 @@ bottom: 43%;
                    color: $color-white;
                    padding: 4px 2px;
 
-                   @media screen and(max-width:992px){
+                   @media screen and (max-width:992px){
                   font-size: 12px;
                 }
 
@@ -98,7 +98,7 @@ bottom: 43%;
         top: 50%;
         left: 50%;
     }
-        @media screen and(max-width:576px){
+        @media screen and (max-width:576px){
             max-width: none;
         }
 .img_details{
@@ -176,11 +176,11 @@ text-decoration: none;
     border-radius: 0;
     outline: 0;
     margin: auto;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
 margin: auto;
 max-width: 65%;  
     }
-    @media screen and(max-width:576px) {
+    @media screen and (max-width:576px) {
         margin: auto;
         max-width: 80%;  
             }
@@ -188,7 +188,7 @@ max-width: 65%;
 .modal-dialog {
     max-width: 660px;
     margin: 1.75rem auto;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         margin: 50px 50px;
     }
 }
@@ -240,7 +240,7 @@ max-width: 65%;
        .product_count{
            margin-top: 30px;
            display: flex;
-           @media screen and(max-width:412px) {
+           @media screen and (max-width:412px) {
             display: grid !important;
             grid-row-gap: 20px !important;
            }

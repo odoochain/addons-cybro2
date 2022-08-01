@@ -8,7 +8,7 @@
     box-shadow: 0px 9px 4px -1px rgba(213, 213, 213, 0.7);
     -webkit-box-shadow: 0px 9px 4px -1px rgba(213, 213, 213, 0.7);
     -moz-box-shadow: 0px 9px 4px -1px rgba(213, 213, 213, 0.7);
-    @media screen and(max-width:996px) {
+    @media screen and (max-width:996px) {
         background-color: rgb(255, 255, 255);
     }
     /* Underline Reveal */
@@ -105,7 +105,7 @@
                     border-radius: 0;
                     border: 0;
                     top: 160%;
-                    @media screen and(max-width:992px) {
+                    @media screen and (max-width:992px) {
                         text-align: center;
                     }
                 }
@@ -131,7 +131,7 @@
             justify-content: space-around;
             width: 16%;
             align-items: unset;
-            @media screen and(max-width:996px) {
+            @media screen and (max-width:996px) {
                 justify-content: center;
                 width: 100%;
                 margin-top: 10px;

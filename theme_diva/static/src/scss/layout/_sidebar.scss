@@ -25,7 +25,7 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px;
-            @media screen and(max-width:996px) {
+            @media screen and (max-width:996px) {
                 justify-content: start;
             }
             .product_img {

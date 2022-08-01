@@ -65,11 +65,11 @@ align-items: flex-end;
       width: 100%;
       text-align: center;
       padding-top: 23px;
-      @media screen and(max-width:996px) {
+      @media screen and (max-width:996px) {
         right: 0%;
         bottom: 20%;
       }
-      @media screen and(max-width:576px) {
+      @media screen and (max-width:576px) {
         right: 0%;
         bottom: 20%;
       }
@@ -96,7 +96,7 @@ align-items: flex-end;
         font-size: 45px;
         padding: 15px;
         margin-left: -50px;
-        @media screen and(max-width:576px) {
+        @media screen and (max-width:576px) {
           font-size: 28px;
         }
       }
@@ -125,7 +125,7 @@ align-items: flex-end;
       i {
         font-size: 45px;
         padding: 15px;
-        @media screen and(max-width:576px) {
+        @media screen and (max-width:576px) {
           font-size: 28px;
         }
       }

@@ -9,7 +9,7 @@
     background-position: center;
     position: relative;
 
-    @media screen and(max-width:992px){
+    @media screen and (max-width:992px){
       padding-top: 75px;
       padding-bottom: 75px;
       padding-left: 10px;
@@ -23,7 +23,7 @@
             max-width: 540px;
             padding-left: 20px;
 
-            @media screen and(max-width:992px){
+            @media screen and (max-width:992px){
                 max-width: 750px;
                 padding-left: 0;
                 padding-top: 50px;
@@ -95,7 +95,7 @@ font-weight: 700;
                     font-weight: 700;
                     text-decoration: none;
                     color: Black;
-                    @media screen and(max-width:992px){
+                    @media screen and (max-width:992px){
                       font-size: 14px;
                     }
 

@@ -136,7 +136,7 @@
                         justify-content: space-between;
                         color: $color_font;
 
-                        @media screen and(max-width:768px){
+                        @media screen and (max-width:768px){
                          display: block;
                          margin-bottom: 10px;
                         }
@@ -160,7 +160,7 @@
                 height: 100%;
                 align-items: center;
 
-                @media screen and(max-width:768px){
+                @media screen and (max-width:768px){
                    
                     display: block;
                 }
@@ -168,7 +168,7 @@
                     display: flex;
                     padding-left: 0;
 
-                    @media screen and(max-width:568px){
+                    @media screen and (max-width:568px){
                         display: block;
                     }
                     li {
@@ -231,7 +231,7 @@
 border-radius: 7px;
 font-size: 18px;
 margin: 0 5px;
-@media screen and(max-width:456px) {
+@media screen and (max-width:456px) {
     padding: 12px 16px !important;
     font-size: 16px !important;
     }

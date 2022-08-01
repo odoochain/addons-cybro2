@@ -2,10 +2,10 @@
     margin-top: 100px;
     margin-bottom: 100px;
 
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
    margin-top: 50px;
        }
-       @media screen and(max-width:500px) {
+       @media screen and (max-width:500px) {
         margin-top: 30px;
             }
     .wrapper{
@@ -26,13 +26,13 @@ position: relative;
         background-color: black;
         top: 70px;
         left: 47%;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             left:44%;
                     }
-                    @media screen and(max-width:600px) {
+                    @media screen and (max-width:600px) {
                         left:42%;
                                 }
-        @media screen and(max-width:400px) {
+        @media screen and (max-width:400px) {
         left: 39%;
                 }
     }
@@ -71,14 +71,14 @@ position: relative;
         left: 47%;
         padding-left: 5px;
 
-    @media screen and(max-width:500px){
+    @media screen and (max-width:500px){
              left:40%;
         
     }
-    // @media screen and(max-width:768px) {
+    // @media screen and (max-width:768px) {
     //    left: 100px;
     // }
-    // @media screen and(max-width:600px) {
+    // @media screen and (max-width:600px) {
     //     left: 75px;
     //  }
 }

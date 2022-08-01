@@ -7,29 +7,29 @@
         position: absolute;
         left: 175px;
         transform: rotate(5deg);
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             width: 100px;
             left: 50px;
         }
-        @media screen and(max-width:576px) {
+        @media screen and (max-width:576px) {
             left: 30px;
             top: 50px;
         }
         .quote-icon-shadow {
             width: 266px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 width: 150px;
             }
-            @media screen and(max-width:576px) {
+            @media screen and (max-width:576px) {
                 width: 100px;
             }
         }
         .quote-icon-face {
             width: 266px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 width: 150px;
             }
-            @media screen and(max-width:576px) {
+            @media screen and (max-width:576px) {
                 width: 100px;
             }
         }
@@ -38,10 +38,10 @@
         padding: 100px 0 20px 0;
         height: 100%;
         position: relative;
-        @media screen and(max-width:576px) {
+        @media screen and (max-width:576px) {
             padding: 30px 0 50px 0;
         }
-        @media screen and(max-width:418px) {
+        @media screen and (max-width:418px) {
             padding: 30px 0 10px 0;
         }
         #owl-theme3 {
@@ -51,15 +51,15 @@
                 position: absolute;
                 bottom: 8%;
                 text-align: center;
-                @media screen and(max-width:992px) {
+                @media screen and (max-width:992px) {
                     bottom: 0%;
                     right: -20%;
                 }
-                @media screen and(max-width:418px) {
+                @media screen and (max-width:418px) {
                     bottom: -15%;
                     right: 0%;
                 }
-                @media screen and(max-width:576px) {
+                @media screen and (max-width:576px) {
                     bottom: 8%;
                     right: 0%;
                 }
@@ -72,7 +72,7 @@
                     border-radius: 50%;
                     margin: 5px;
                     border: 2px solid $color-hover !important;
-                    @media screen and(max-width:576px) {
+                    @media screen and (max-width:576px) {
                         height: 12px;
                         width: 12px;
                         border: 1px solid $color-hover !important;
@@ -93,15 +93,15 @@
                         letter-spacing: 1px;
                         line-height: 1.9;
                         font-weight: 500;
-                        @media screen and(max-width:768px) {
+                        @media screen and (max-width:768px) {
                             padding-left: 40px;
                             font-size: 25px !important;
                         }
-                        @media screen and(max-width:576px) {
+                        @media screen and (max-width:576px) {
                             padding-left: 0;
                             font-size: 18px !important;
                         }
-                        @media screen and(max-width:425px) {
+                        @media screen and (max-width:425px) {
                             letter-spacing: 1px;
                             line-height: 1.5;
                             font-weight: 400;
@@ -113,7 +113,7 @@
                         justify-content: start;
                         margin-left: 100px;
                         align-items: center;
-                        @media screen and(max-width:576px) {
+                        @media screen and (max-width:576px) {
                             margin-top: 15px;
                             margin-left: 50px;
                         }
@@ -125,7 +125,7 @@
                         }
                         .person {
                             width: 100px;
-                            @media screen and(max-width:576px) {
+                            @media screen and (max-width:576px) {
                                 width: 60px;
                             }
                             img {

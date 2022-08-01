@@ -6,13 +6,13 @@
     width: 100%;
     background-color:$color-brand2;
 
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         height: 1000px;
       }
 
     .footer_content{
         padding-top: 70px;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             padding-top: 270px;;
           }
       
@@ -22,7 +22,7 @@
             font-weight: 700;
             text-align: center;
 
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 text-align: left;
                 padding-bottom: 30px;
                 padding-left: 30px;
@@ -36,7 +36,7 @@
              
                   li{
                       padding-bottom: 5px;
-                      @media screen and(max-width:768px) {
+                      @media screen and (max-width:768px) {
                         text-align: left;
                         padding-bottom: 15px !important;
                         // padding-left: 30px;
@@ -56,12 +56,12 @@
           }
 
          .footer_contact{
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 padding-top: 15px;
               }
          }
         .ft {
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 text-align: left;
                
                 padding-left: 30px;
@@ -126,7 +126,7 @@ font-size: 12px;
 margin:auto;
 color:$color-h-bg;
         padding-top: 60px;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
          padding-top: 10px;
           }
         a{

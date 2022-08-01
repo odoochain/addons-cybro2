@@ -2,7 +2,7 @@
     background-color: $color-brand2;
     position: relative;
     margin-top: 45px;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
        margin-left: 30px;
         }
 
@@ -10,7 +10,7 @@
 padding: 0px 70px;
 
 
-@media screen and(max-width:1350px) {
+@media screen and (max-width:1350px) {
     padding: 0px 20px;
      }
 }
@@ -114,7 +114,7 @@ box-shadow: none !important;
         display:flex;
         margin-bottom: 30px;
 
-        @media screen and(max-width:1140px) {
+        @media screen and (max-width:1140px) {
            display: block;
          }
         .post{
@@ -123,7 +123,7 @@ box-shadow: none !important;
                 max-width: 100px;
 
 
-                @media screen and(max-width:1140px) {
+                @media screen and (max-width:1140px) {
                   max-width: 100%;
                   }
                 img{
@@ -216,7 +216,7 @@ box-shadow: none !important;
          
             overflow: hidden;
 
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                max-width: 100%;
              }
             img{
@@ -236,7 +236,7 @@ box-shadow: none !important;
                 img {
                     padding-right: 10px !important;
                     padding-top: 15px;
-                    @media screen and(max-width:992px) {
+                    @media screen and (max-width:992px) {
                       padding: 0px !important;
                       margin-bottom: 15px;
                       }
@@ -246,7 +246,7 @@ box-shadow: none !important;
                 img {
                     padding-left: 10px !important;
                     padding-top: 15px;
-                    @media screen and(max-width:992px) {
+                    @media screen and (max-width:992px) {
                         padding: 0px !important;
                         margin-bottom: 15px;
                         }
@@ -256,7 +256,7 @@ box-shadow: none !important;
                 img {
                   padding-right: 10px !important;
                   padding-top: 15px;
-                  @media screen and(max-width:992px) {
+                  @media screen and (max-width:992px) {
                     padding: 0px !important;
                     margin-bottom: 15px;
                     }
@@ -267,7 +267,7 @@ box-shadow: none !important;
                 img {
                   padding-left: 10px !important;
                   padding-top: 15px;
-                  @media screen and(max-width:992px) {
+                  @media screen and (max-width:992px) {
                     padding: 0px !important;
                     margin-bottom: 15px;
                     

@@ -22,11 +22,11 @@
     border: none !important;
     color: $color-brand6;
     font-weight: 700;
-    @media screen and(max-width:996px) {
+    @media screen and (max-width:996px) {
       padding: 20px 16px !important;
       font-size: 25px;
     }
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
       padding: 10px 20px !important;
       font-size: 25px;
     }
@@ -44,7 +44,7 @@
     z-index: 1200;
     bottom: 0;
     transition: all 0.4s linear;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
       display: none !important;
     }
   }
@@ -55,7 +55,7 @@
   }
   .tab-content {
     padding-top: 90px;
-    @media screen and(max-width:996px) {
+    @media screen and (max-width:996px) {
       padding-top: 50px;
     }
     .tab-pane {

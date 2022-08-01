@@ -1,16 +1,16 @@
 .brands {
     margin-top: 100px;
-    @media screen and(max-width:996px) {
+    @media screen and (max-width:996px) {
         margin-top: 75px;
     }
-    @media screen and(max-width:996px) {
+    @media screen and (max-width:996px) {
         margin-top: 50px;
     }
     .brand_img {
         max-width: 120px;
         display: block;
         margin: auto;
-        @media screen and(max-width:996px) {
+        @media screen and (max-width:996px) {
             margin-bottom: 15px;
         }
         img {

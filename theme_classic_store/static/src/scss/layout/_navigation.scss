@@ -3,13 +3,13 @@
     border-bottom-color: $color-border;
 
     .login {
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
             display: none;
         }
     }
     .login2 {
         display: none;
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
             display: block;
             text-align: center;
             margin-top: 15px;
@@ -45,7 +45,7 @@
 
         .nav-item {
             .dropdown-menu {
-                @media screen and(max-width:992px) {
+                @media screen and (max-width:992px) {
                     text-align: center;
                 }
 
@@ -61,7 +61,7 @@
                 color: $color-font;
                 font-size: 16px;
                 padding: 0 20px;
-                @media screen and(max-width:992px) {
+                @media screen and (max-width:992px) {
                     padding: 10px 0;
                 }
 

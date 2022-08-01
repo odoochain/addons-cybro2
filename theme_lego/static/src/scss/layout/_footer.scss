@@ -5,7 +5,7 @@
         padding-top: 90px;
         padding-bottom: 90px;
         .ft_b {
-            @media screen and(max-width:996px) {
+            @media screen and (max-width:996px) {
                 margin-top: 45px;
             }
         }
@@ -20,7 +20,7 @@
                 color: $pfont;
                 line-height: 21px;
                 font-size: 14px;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     margin-bottom: 45px;
                 }
             }
@@ -62,7 +62,7 @@
             color: $pfont;
             margin-bottom: 20px;
             width: 100%;
-            @media screen and(max-width:996px) {
+            @media screen and (max-width:996px) {
                 text-align: left;
                 padding-left: 12px;
             }

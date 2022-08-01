@@ -85,22 +85,22 @@ transform: translateX(-50%) rotate(45deg);
           -ms-transform:translateX(-21%) rotate(-1deg);
           transform:translateX(-21%) rotate(-1deg);
   
-          @media screen and(max-width:1000px) {
+          @media screen and (max-width:1000px) {
            right:31%;
           }
-          @media screen and(max-width:768px) {
+          @media screen and (max-width:768px) {
             right:25%;
           }
-          @media screen and(max-width:650px) {
+          @media screen and (max-width:650px) {
             right:26%;
           }
-          @media screen and(max-width:500px) {
+          @media screen and (max-width:500px) {
             right:21%;
           }
-          @media screen and(max-width:414px) {
+          @media screen and (max-width:414px) {
             right:15%;
           }
-          @media screen and(max-width:375px) {
+          @media screen and (max-width:375px) {
             right:11%;
           }
         }

@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
       padding-bottom: 80px;
     }
   }
@@ -19,7 +19,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
       padding-bottom: 80px;
     }
   }
@@ -31,7 +31,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
       padding-bottom: 80px;
     }
   }
@@ -43,10 +43,10 @@
     width: 100%;
     padding-top: 220px;
     padding-bottom: 60px;
-    @media screen and(max-width:996px) {
+    @media screen and (max-width:996px) {
       padding-top: 150px;
     }
-    @media screen and(max-width:500px) {
+    @media screen and (max-width:500px) {
       padding-top: 110px;
     }
     .card {
@@ -54,10 +54,10 @@
       border: none;
       background-color: transparent;
       width: 50%;
-      @media screen and(max-width:996px) {
+      @media screen and (max-width:996px) {
         width: 75%;
       }
-      @media screen and(max-width:375px) {
+      @media screen and (max-width:375px) {
         width: 90%;
       }
       .card-header {
@@ -68,7 +68,7 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         padding-bottom: 0;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
           padding-bottom: 20px;
         }
       }
@@ -78,7 +78,7 @@
           font-weight: 700;
           color: $color-brand6;
           letter-spacing: 1px;
-          @media screen and(max-width:576px) {
+          @media screen and (max-width:576px) {
             font-size: 35px;
           }
         }
@@ -87,7 +87,7 @@
           margin: 26px 0;
           letter-spacing: 0.5px;
           color: $color-brand6;
-          @media screen and(max-width:768px) {
+          @media screen and (max-width:768px) {
             padding-bottom: 20px;
           }
         }
@@ -95,7 +95,7 @@
       .footer_icon {
         margin-left: 26px;
         margin-top: 55px;
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
           text-align: start;
           margin-top: 30px;
           margin-left: 20px;
@@ -116,17 +116,17 @@
       position: absolute;
       width: 100%;
       bottom: 14%;
-      @media screen and(max-width:996px) {
+      @media screen and (max-width:996px) {
         width: auto;
         left: 4%;
         bottom: 0;
       }
-      @media screen and(max-width:768px) {
+      @media screen and (max-width:768px) {
         width: auto;
         left: 15%;
         bottom: 4%;
       }
-      @media screen and(max-width:576px) {
+      @media screen and (max-width:576px) {
         left: 2%;
         bottom: 7%;
       }
@@ -171,22 +171,22 @@
       bottom: 8em;
       right: 24em;
       z-index: 999;
-      @media screen and(max-width:996px) {
+      @media screen and (max-width:996px) {
         bottom: 9.5em;
         right: 30em;
       }
-      @media screen and(max-width:768px) {
+      @media screen and (max-width:768px) {
         bottom: 4em;
         right: 20em;
       }
-      @media screen and(max-width:576px) {
+      @media screen and (max-width:576px) {
         bottom: 10%;
       }
-      @media screen and(max-width:500px) {
+      @media screen and (max-width:500px) {
         bottom: 10%;
         right: 12em;
       }
-      @media screen and(max-width:375px) {
+      @media screen and (max-width:375px) {
         bottom: 3%;
         right: 18em;
       }

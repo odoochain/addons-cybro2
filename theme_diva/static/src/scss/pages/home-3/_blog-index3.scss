@@ -1,12 +1,12 @@
 .blog_index3{
     background: var(	--primar-gradient-color-two);
     padding: 70px 0 50px 0;
-    @media screen and(max-width:992px) {
+    @media screen and (max-width:992px) {
         padding: 70px 25px 50px 35px;
     }
     .wrapper{
         .card-deck{
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
             display: block;
             }
         }
@@ -35,7 +35,7 @@
     .wrapper{
         display: grid;
         grid-template-columns: 1fr 2fr;
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
             grid-template-columns: 1fr;
 
         }
@@ -47,7 +47,7 @@
             padding: 0 45px;
 
 
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                 padding: 40px 45px;
     
             }
@@ -80,7 +80,7 @@
     .wrapper_2{
         display: grid;
         grid-template-columns: 2fr 1fr;
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
             grid-template-columns: 1fr;
 
         }
@@ -90,7 +90,7 @@
             justify-content: flex-start;
             align-items: center;
             padding: 0 45px;
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                 padding: 40px 45px;
     
             }
@@ -124,7 +124,7 @@
     padding-bottom: 50px;
     .blog_posts{
         .card-deck{
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
             display: block !important;
             }
         .card{

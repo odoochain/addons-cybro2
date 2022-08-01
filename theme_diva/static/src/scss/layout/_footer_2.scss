@@ -1,6 +1,6 @@
 .footer_2 {
     padding-bottom: 100px;
-    @media screen and(max-width:768px) {
+    @media screen and (max-width:768px) {
         padding-bottom: 40px;
     }
     .navbar-brand {
@@ -18,22 +18,22 @@
         &:hover {
             color: $color-hover !important;
         }
-        @media screen and(max-width:1016px) {
+        @media screen and (max-width:1016px) {
             margin-right: 3rem;
         }
     }
     .wrappers {
         padding: 40px 60px 40px 40px;
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
             padding: 50px 60px 40px 0px;
         }
-        @media screen and(max-width:576px) {
+        @media screen and (max-width:576px) {
             padding: 50px 60px 40px 0px;
         }
         .forms-gds {
             display: grid;
             grid-template-columns: 2fr 1fr;
-            @media screen and(max-width:576px) {
+            @media screen and (max-width:576px) {
                 grid-template-columns: 3fr 1fr;
             }
             .form-input {
@@ -52,11 +52,11 @@
             padding-top: 40px;
             display: flex;
             justify-content: space-between;
-            @media screen and(max-width:576px) {
+            @media screen and (max-width:576px) {
                 display: block;
             }
             .number {
-                @media screen and(max-width:576px) {
+                @media screen and (max-width:576px) {
                     margin-bottom: 30px;
                 }
                 a {
@@ -83,11 +83,11 @@
             color: $color-brand3;
             text-align: start;
             font-size: 14px !important;
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                 margin: auto;
                 text-align: center;
             }
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 padding: 0px px 0 0px;
             }
             a {
@@ -105,18 +105,18 @@
     .links {
         display: flex;
         margin-top: 40px;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             margin-top: 10px;
         }
-        @media screen and(max-width:576px) {
+        @media screen and (max-width:576px) {
             margin-top: 0px;
         }
         :first-child {
             padding-right: 10px;
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                 padding-right: 80px;
             }
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 padding-right: 20px;
             }
         }
@@ -136,7 +136,7 @@
                 border-bottom-color: $color-font;
                 font-size: 18px;
                 letter-spacing: 2px;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     font-size: 16px;
                     letter-spacing: 1px;
                 }

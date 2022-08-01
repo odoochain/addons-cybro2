@@ -4,7 +4,7 @@ margin-bottom: 450px;
 padding-bottom: 100px;
 background: rgb(252, 252, 252);
 
-@media screen and(max-width:768px) {
+@media screen and (max-width:768px) {
 margin-bottom: 110vh;
   }
     .heading {
@@ -19,7 +19,7 @@ margin-bottom: 110vh;
             font-weight: 700;
             margin-bottom: 10px;
 
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 40px;
                  }
         }
@@ -90,7 +90,7 @@ margin-bottom: 110vh;
                         padding-top: 15px;
                         margin:0 10px;
                        
-                        @media screen and(max-width:768px) {
+                        @media screen and (max-width:768px) {
                             font-size: 20px;
                           }
 
@@ -107,7 +107,7 @@ margin-bottom: 110vh;
                         ul {
                             display: flex;
                             padding-left: 0;
-                            @media screen and(max-width:738px) {
+                            @media screen and (max-width:738px) {
                                 display: block;
                               }
                             .icon {

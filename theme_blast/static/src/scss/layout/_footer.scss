@@ -2,7 +2,7 @@
     padding-bottom: 0px!important;
     background: #15161d;
     color: #f8f8f8 !important;
-    @media screen and(max-width:992px) {
+    @media screen and (max-width:992px) {
        padding-top: 50;
     }
     .footer_content {
@@ -12,7 +12,7 @@
                 max-width: 150px;
                 margin: auto;
                 padding-bottom: 20px;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     margin-left: 10px;
                 }
                 img {
@@ -25,7 +25,7 @@
             p {
                 text-align: center;
 
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                  text-align: left;
                  margin-left: 10px;
                 }
@@ -35,7 +35,7 @@
                 text-align: center;
                 display: flex;
                 justify-content: center;
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                   justify-content: left;
                    }
           
@@ -126,12 +126,12 @@
         border-top-color: $color-grey ;
         padding: 30px 0;
         text-align: center;
-        @media screen and(max-width:768px) {
+        @media screen and (max-width:768px) {
             text-align: left;
            
            }
            span{
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
           margin-left: 20px;
                
             }

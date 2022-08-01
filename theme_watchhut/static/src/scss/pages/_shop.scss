@@ -43,14 +43,14 @@ padding-top: 20px;
              color:$color-black;
              text-transform: uppercase;
              padding-bottom: 30px;
-             @media screen and(max-width:768px){
+             @media screen and (max-width:768px){
                font-size: 30px;
                   }
          }
          .categories{
            display: flex;
            justify-content: center;
-           @media screen and(max-width:768px){
+           @media screen and (max-width:768px){
            display: block;
                   }
          }

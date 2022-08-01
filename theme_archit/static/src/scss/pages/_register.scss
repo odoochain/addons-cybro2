@@ -8,7 +8,7 @@
     background-position: center;
     position: relative;
 
-    @media screen and(max-width:992px) {
+    @media screen and (max-width:992px) {
         height: auto !important;
     }
 
@@ -22,7 +22,7 @@
     .wrapper {
         position: relative;
 
-        @media screen and(max-width:992px) {
+        @media screen and (max-width:992px) {
             padding-top: 100px;
         }
         .register_form {
@@ -31,11 +31,11 @@
             border-radius: 25px;
             margin-top: 175px;
 
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 padding: 40px 40px;
                 margin: 50px 30px;
             }
-            @media screen and(max-width:992px) {
+            @media screen and (max-width:992px) {
                 padding: 40px 40px;
                 margin: 75px 30px;
             }
@@ -86,7 +86,7 @@
                     display: flex;
                     justify-content: end;
 
-                    @media screen and(max-width:768px) {
+                    @media screen and (max-width:768px) {
                         justify-content: flex-start;
                         margin-left: 15px;
                         margin-bottom: 15px;

@@ -14,7 +14,7 @@
       margin-bottom: 10px;
 
 
-      @media screen and(max-width:768px) {
+      @media screen and (max-width:768px) {
         font-size: 40px;
          }
     }
@@ -29,10 +29,10 @@
   .wrapper {
     margin-top: 75px;
     padding-bottom: 40px;
-    @media screen and(max-width:996px) {
+    @media screen and (max-width:996px) {
       padding: 0 30px;
        }
-       @media screen and(max-width:768px) {
+       @media screen and (max-width:768px) {
      margin-top: 0;
          }
     .recent_content {
@@ -60,7 +60,7 @@
       max-width: 380px;
       overflow: hidden;
       position: relative;
-      @media screen and(max-width:996px) {
+      @media screen and (max-width:996px) {
       margin-top: 30px;
       max-width: 100%
          }

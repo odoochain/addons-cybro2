@@ -17,7 +17,7 @@
             vertical-align: auto;
             padding-top: 180px;
             letter-spacing: 2px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 50px;
                 padding-top: 240px;
             }
@@ -28,7 +28,7 @@
             text-align: center;
             letter-spacing: 2px;
             font-size: 40px;
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 font-size: 30px;
             }
         }
@@ -39,7 +39,7 @@
             line-height: 2.3rem;
             padding: 0px 100px;
 
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 padding: 0;
             }
             .top {
@@ -56,7 +56,7 @@
         .wrapper {
             margin-top: 100px;
 
-            @media screen and(max-width:768px) {
+            @media screen and (max-width:768px) {
                 margin-top: 50px;
             }
             .part_logo {
@@ -64,7 +64,7 @@
                 max-width: 150px;
                 margin: auto;
 
-                @media screen and(max-width:768px) {
+                @media screen and (max-width:768px) {
                     padding-top: 50px;
                 }
 

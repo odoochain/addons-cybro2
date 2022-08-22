@@ -28,8 +28,8 @@ class ResourceProject(models.Model):
     """ Task Model"""
     _inherit = 'project.task'
 
-    task_start_date = fields.Date(sting="Start Date", required=True,
-                                  help='Task end date')
+    task_start_date = fields.Date(string="Task Start Date", required=True,
+                                  help='Task end date', default=fields.datetime.now())
 
     @api.onchange('task_start_date', 'date_deadline')
     def select_employee(self):

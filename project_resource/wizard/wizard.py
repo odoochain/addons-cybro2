@@ -3,11 +3,11 @@ from odoo import models, fields
 
 
 class FreeResource(models.TransientModel):
-    """Wizard to add the period to get the free resource"""
     _name = 'free.resource'
+    _description = "Wizard to add the period to get the free resource"
 
     date_from = fields.Date(string="Start Date")
-    date_to = fields.Date(string="End Date")
+    date_to = fields.Date(string="End Date To")
 
     def get_free_resource(self):
         """get the list of free resource at the given period

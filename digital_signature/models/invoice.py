@@ -49,7 +49,7 @@ class InvoiceInherit(models.Model):
     show_signature = fields.Boolean('Show Signature',
                                     default=_default_show_sign,
                                     compute='_compute_show_signature')
-    show_sign_bill = fields.Boolean('Show Signature',
+    show_sign_bill = fields.Boolean('Show Bill Signature',
                                     default=_default_show_sign_bill,
                                     compute='_compute_show_sign_bill')
     enable_others = fields.Boolean(default=_default_enable_sign,

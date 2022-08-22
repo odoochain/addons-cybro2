@@ -23,6 +23,7 @@ from odoo import models, fields, api, _
 
 class TaskChecklist(models.Model):
     _name = 'task.checklist'
+    _description = "TO check task list"
 
     name = fields.Char(string='Name')
     description = fields.Char(string='Description')

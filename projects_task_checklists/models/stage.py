@@ -23,6 +23,7 @@ from odoo import models, fields, api, _
 
 class ChecklistStage(models.Model):
     _inherit = "project.task.type"
+    _description = "Projects Stage Checklist"
 
     is_checklist = fields.Boolean(string='Checklist Task')
 

@@ -35,7 +35,7 @@ class InventoryInherit(models.Model):
         return self.env['ir.config_parameter'].sudo().get_param(
             'digital_signature.enable_options_inventory')
 
-    digital_sign = fields.Binary(string='Signature')
+    digital_sign = fields.Binary(string='Digital Signature')
     sign_by = fields.Char(string='Signed By')
     designation = fields.Char(string='Designation')
     sign_on = fields.Datetime(string='Signed On')

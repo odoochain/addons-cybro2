@@ -30,6 +30,7 @@ class ChecklistStage(models.Model):
 
 class ChecklistActivityStages(models.Model):
     _name = 'checklist.activity.stages'
+    _description = "Check Activity List"
 
     stage_name = fields.Char(string='Stage')
     sequence = fields.Char(string='sequence')

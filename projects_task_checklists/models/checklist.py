@@ -42,7 +42,7 @@ class ChecklistItem(models.Model):
     description = fields.Char()
     projects_id = fields.Many2one('project.task')
     checklist_id = fields.Many2one('task.checklist')
-    state = fields.Selection(string='Status', required=True, readonly=True, copy=False, tracking=True, selection=[
+    state = fields.Selection(string='Status', required=True, readonly=True, copy=False, selection=[
         ('todo', 'To Do'),
         ('in_progress', 'In Progress'),
         ('done', 'Done'),

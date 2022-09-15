@@ -26,7 +26,9 @@
     'summary': """This module helps to print the catalogue of
                 the single/multi products from the backend and single product and its variant
                 from the E-commerce website
-                including details like images and specifications""",
+                including details like images and specifications
+                他的模块有助于打印来自后端的单一产品目录和来自电子商务网站的单一产品及其变体的目录，包括图像和规格等详细信息
+                """,
     'description': """This module helps to print the catalogue of
                 the single/multi products from the backend and single product and its variant
                 from the E-commerce website

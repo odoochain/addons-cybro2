@@ -28,7 +28,7 @@ class ProductCatalogueReport(models.AbstractModel):
     the products"""
 
     _name = "report.product_catalogue.report_product_catalog"
-
+    _description = "Category Catalog Report"
 
     @api.model
     def _get_report_values(self, docids, data=None):

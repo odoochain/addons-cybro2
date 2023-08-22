@@ -4,14 +4,13 @@
   width:1023px !important;
   font-size:14px;
   height: 300px !important;
-  margin:0px ;
+  margin:0;
   display:block;
   border-radius:10px;
   margin-bottom: 40px !important;
 
 }
-background:#eee;
-}
+/*background: #eee*/
 
 .padding {
     padding: 50px;

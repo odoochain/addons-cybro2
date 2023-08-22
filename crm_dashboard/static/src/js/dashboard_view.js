@@ -1632,7 +1632,7 @@ odoo.define('crm_dashboard.CRMDashboard', function (require) {
                 });
             }
             else{
-                self.$('.o_hr_dashboard').append(QWeb.render('EmployeeWarning', {widget: self}));
+                self.$('.o_hr_dashboard').append(QWeb.render('web.LegacyWarningDialog', {widget: self}));
             }
         },
 

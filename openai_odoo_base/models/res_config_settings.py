@@ -27,6 +27,7 @@ from odoo import fields, models
 class ResConfigSettings(models.TransientModel):
     """Class used to add field to res.config"""
     _inherit = 'res.config.settings'
-
+    _name = 'res.config.settings'
     openai_api_key = fields.Char("OpenAI API Key",
                                  config_parameter='openai_api_key')
+

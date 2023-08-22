@@ -31,7 +31,10 @@
     'maintainer': 'Cybrosys Techno Solutions',
     'images': ['static/description/banner.png'],
     'website': 'https://www.cybrosys.com',
-    'depends': ['base', 'base_setup'],
+    'depends': ['base',
+                'base_setup',
+                'xxz_ai_gpt',
+                ],
     'data': [
         'views/res_config_settings.xml',
     ],

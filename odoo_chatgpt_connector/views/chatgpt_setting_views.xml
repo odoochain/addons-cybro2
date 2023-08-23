@@ -15,8 +15,8 @@
                             <div class="content-group">
                                 <div class="row mt8">
                                     <label class="col-lg-3" string="API Key"
-                                           for="api_key"/>
-                                    <field name="api_key"
+                                           for="openai_api_key"/>
+                                    <field name="openai_api_key"
                                            title="Provide the API key here"/>
                                 </div>
                             </div>

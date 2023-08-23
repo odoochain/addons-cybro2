@@ -23,11 +23,11 @@
 
 {
     'name': 'Odoo ChatGPT Connector',
-    'version': '16.0.1.0.1',
+    'version': '16.0.1.0.2',
     'summary': 'Odoo ChatGPT  Connector',
     'description': 'Allows the application to leverage the capabilities of the GPT language model to generate human-like responses,Odoo ChatGPT  Connector,Odoo ChatGPT,ChatGPT, chatgpt odoo connector, chatgpt',
-    'author': 'Cybrosys Techno Solutions',
-    'company': 'Cybrosys Techno Solutions',
+    'author': 'Cybrosys Techno Solutions','Odoochain'
+    'company': 'Cybrosys Techno Solutions','Zenman Tech'
     'maintainer': 'Cybrosys Techno Solutions',
     'website': 'https://www.cybrosys.com',
     'license': 'AGPL-3',

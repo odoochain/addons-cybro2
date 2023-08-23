@@ -6,3 +6,9 @@
     </record>
 
 此模块融进xxz_ai_gpt中
+
+todo 
+
+界面打印机化
+代理上chatgpt
+每个网站不同的api

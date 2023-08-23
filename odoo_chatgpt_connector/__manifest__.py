@@ -31,6 +31,9 @@
     'maintainer': 'Cybrosys Techno Solutions',
     'website': 'https://www.cybrosys.com',
     'license': 'AGPL-3',
+    # 'excludes': [
+    #     'openai_odoo_base',
+    # ],  #与此不同是设置页为website
     'depends': ['base', 'website'],
     'data': [
         'views/chatgpt_menu.xml',

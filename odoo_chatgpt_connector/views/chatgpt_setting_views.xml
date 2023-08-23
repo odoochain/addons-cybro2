@@ -14,7 +14,7 @@
                         <div class="o_setting_right_pane border-start-0">
                             <div class="content-group">
                                 <div class="row mt8">
-                                    <label class="col-lg-3" string="API Key"
+                                    <label class="col-lg-3" string="Openai API Key"
                                            for="openai_api_key"/>
                                     <field name="openai_api_key"
                                            title="Provide the API key here"/>

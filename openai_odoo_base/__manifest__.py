@@ -33,8 +33,10 @@
     'website': 'https://www.cybrosys.com',
     'depends': ['base',
                 'base_setup',
-                'xxz_ai_gpt',
                 ],
+    # 'excludes': [
+    #     'odoo_chatgpt_connector',
+    # ],  #与此不同的是views建立在base_setup模板上
     'data': [
         'views/res_config_settings.xml',
     ],

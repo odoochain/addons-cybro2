@@ -42,7 +42,8 @@ class ProductProduct(models.Model):
             prompt = "Generate tags for the following description: \n" + str(
                 product.description) + "\n\nTags:"
             response = requests.post(
-                "https://api.openai.com/v1/engines/text-davinci-002/completions",
+                url=str(self.env['ir.config_parameter'].sudo().get_param(
+                    'openai_api_base')) + "/engines/text-davinci-002/completions",
                 headers={
                     "Content-Type": "application/json",
                     "Authorization": f"Bearer {api_key}"
@@ -93,8 +94,8 @@ class ProductProduct(models.Model):
             prompt += "\nDescription:"
 
             response = requests.post(
-                "https://api.openai.com/v1/engines/text-davinci-002/completions"
-                ,
+                url=str(self.env['ir.config_parameter'].sudo().get_param(
+                    'openai_api_base')) + "/engines/text-davinci-002/completions",
                 headers={
                     "Content-Type": "application/json",
                     "Authorization": f"Bearer {api_key}"

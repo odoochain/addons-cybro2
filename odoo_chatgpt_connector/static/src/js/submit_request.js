@@ -15,7 +15,7 @@ odoo.define('odoo_chatgpt_connector.chatgpt_search', function(require) {
          * @constructor
          */
         init: function() {
-            var openai_api_key = "";
+            var website_openai_api_key = "";
         },
 
         /* For getting the Answer of submitted question*/
@@ -23,20 +23,20 @@ odoo.define('odoo_chatgpt_connector.chatgpt_search', function(require) {
             $(this).prop("disabled", true);
             $('#result_area').val('');
             $('#result_area')[0].placeholder = "Loading.....";
-            if (!this.openai_api_key) {
+            if (!this.website_openai_api_key) {
                 await rpc.query({
                     model: 'res.config.settings',
                     method: 'get_chat_gpt_key',
                     args: [,],
                 }).then(result => {
                 console.log(result);
-                    this.openai_api_key = result;
+                    this.website_openai_api_key = result;
                 });
             }
             var question = event.target.value;
             var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
-            myHeaders.append("Authorization", "Bearer " + this.openai_api_key);
+            myHeaders.append("Authorization", "Bearer " + this.website_openai_api_key);
 
             var raw = JSON.stringify({
                 "model": "text-davinci-003",

@@ -31,7 +31,6 @@
     'images': ['static/description/banner.png'],
     'website': 'https://www.cybrosys.com',
     'depends': ['base', 'product', 'openai_odoo_base', 'sale',
-                'xxz_ai_gpt',
                 ],
     'data': [
         'security/ir.model.access.csv',

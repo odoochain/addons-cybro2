@@ -27,6 +27,19 @@
                                     <field name="openai_api_key"/>
                                 </div>
                             </div>
+                            <div class="o_setting_right_pane">
+                                <label string="OpenAI Api Base"
+                                       for="openai_api_base"/>
+                                <a href="https://platform.openai.com/docs/api-reference/authentication"
+                                   title="Documentation" class="ms-1 o_doc_link"
+                                   target="_blank"/>
+                                <div class="text-muted" id="msg_module_openai_base">
+                                    Add api base url,default is https://api.openai.com/v1
+                                </div>
+                                <div>
+                                    <field name="openai_api_base"/>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

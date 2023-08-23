@@ -30,6 +30,8 @@ class ResConfigSettings(models.TransientModel):
     _name = 'res.config.settings'
     openai_api_key = fields.Char("OpenAI API Key",
                                  config_parameter='openai_api_key')
-    openai_endpoint = fields.Char('End Point', default='https://api.openai.com/v1')
+    openai_api_base = fields.Char('OpenAI API Base',
+                                  config_parameter='openai_api_base',
+                                  default='https://api.openai.com/v1')
 
 

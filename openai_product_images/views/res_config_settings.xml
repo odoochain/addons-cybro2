@@ -18,7 +18,7 @@
                                    title="Documentation" class="ms-1 o_doc_link"
                                    target="_blank"/>
                                 <div class="text-muted" id="msg_module_openai">
-                                    Add api key you have got from the OpenAI
+                                    Add endpoint you have got from the OpenAI
                                     website
                                 </div>
                                 <div>

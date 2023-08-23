@@ -36,6 +36,7 @@
         'security/ir.model.access.csv',
         'views/product_template_views.xml',
         'views/dalle_image_suggestion.xml',
+        'views/res_config_settings.xml',
         'wizard/image_suggestion_views.xml',
     ],
     'license': 'AGPL-3',

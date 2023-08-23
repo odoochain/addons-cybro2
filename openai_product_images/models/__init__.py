@@ -21,3 +21,4 @@
 ################################################################################
 from . import dalle_image_suggestion
 from . import product_template
+from . import res_config_settings

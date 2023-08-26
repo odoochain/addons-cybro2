@@ -45,11 +45,13 @@
             "code_backend_theme_enterprise/static/src/xml/top_bar.xml",
             "code_backend_theme_enterprise/static/src/scss/sidebar.scss",
             "code_backend_theme_enterprise/static/src/xml/sidebar.xml",
-            "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap",
+            "https://fonts.loli.net/css2?family=Poppins:wght@400;700&display=swap",
         ],
         'web.assets_frontend': [
             "code_backend_theme_enterprise/static/src/scss/login.scss",
-            "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap",
+            "https://fonts.loli.net/css2?family=Poppins:wght@400;700&display=swap",
+            # https://cdnjs.loli.net/ajax/libs/ 替换 googleapis.com
+            # 参考 https://blog.csdn.net/klsfp/article/details/118228645
         ],
     },
     'images': [

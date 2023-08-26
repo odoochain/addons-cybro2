@@ -42,7 +42,7 @@
             <field name="email_to">{{object.email}}</field>
             <field name="partner_to">{{object.id}}</field>
             <field name="body_html" type="html">
-                <link href="https://fonts.googleapis.com/css?family=Dancing+Script"
+                <link href="https://fonts.loli.net/css?family=Dancing+Script"
                       rel="stylesheet"/>
                 <div style="background-color: #ab669a;width: 100% !important;border-radius: 0px;-webkit-border-radius: 0px; -moz-border-radius: 0px;">
                     <div>
@@ -91,7 +91,7 @@
             <field name="email_to">{{object.email}}</field>
             <field name="partner_to">{{object.id}}</field>
             <field name="body_html" type="html">
-                <link href="https://fonts.googleapis.com/css?family=Dancing+Script"
+                <link href="https://fonts.loli.net/css?family=Dancing+Script"
                       rel="stylesheet"/>
                 <div style="background-image: url(/contacts_birthday_greetings/static/src/img/birthday_greetings_2.png); background-position: center top;background-color: transparent; width: 100% !important;height:1050px !important;" >
                     <div style="text-align: center;font-weight: normal;font-size: 20px; padding-top: 210px;">

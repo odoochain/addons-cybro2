@@ -39,7 +39,7 @@
             'odoo_dynamic_dashboard/static/src/js/dynamic_dashboard.js',
             'odoo_dynamic_dashboard/static/src/scss/style.scss',
             'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js',
-            'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700',
+            'https://fonts.loli.net/css?family=Source+Sans+Pro:300,400,400i,700',
             'odoo_dynamic_dashboard/static/src/xml/dynamic_dashboard_template.xml',
         ],
     },

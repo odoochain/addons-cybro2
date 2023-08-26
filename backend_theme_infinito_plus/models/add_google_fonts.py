@@ -59,7 +59,7 @@ class GoogleFont(models.Model):
                           '(KHTML, like Gecko)'
                           'Chrome/101.0.4951.41 Safari/537.36',
         }
-        url = f'https://fonts.googleapis.com/css?family={name}&display=swap'
+        url = f'https://fonts.loli.net/css?family={name}&display=swap'
         req = requests.get(url, timeout=5, headers=headers_woff2)
         return req.content
 

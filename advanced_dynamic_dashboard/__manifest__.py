@@ -54,7 +54,7 @@
             'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js',
             'advanced_dynamic_dashboard/static/src/js/dynamic_dashboard.js',
             'advanced_dynamic_dashboard/static/src/xml/dynamic_dashboard_template.xml',
-            'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700'
+            'https://fonts.loli.net/css?family=Source+Sans+Pro:300,400,400i,700'
         ],
     },
     'images': ['static/description/banner.png'],

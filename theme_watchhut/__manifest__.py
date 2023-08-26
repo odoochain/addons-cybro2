@@ -59,8 +59,8 @@
             '/theme_watchhut/static/src/css/font-awesome.min.css',
             '/theme_watchhut/static/src/js/custom.js',
             '/theme_watchhut/static/src/js/custom_shop.js',
-            'https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap',
-            'https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&amp;display=swap',
+            'https://fonts.loli.net/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap',
+            'https://fonts.loli.net/css2?family=Cinzel+Decorative:wght@400;700;900&amp;display=swap',
         ]
     },
 }

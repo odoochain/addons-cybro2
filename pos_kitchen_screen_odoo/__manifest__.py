@@ -67,7 +67,7 @@
             'pos_kitchen_screen_odoo/static/src/xml/dashboard_templates.xml',
             'pos_kitchen_screen_odoo/static/src/js/fields_load.js',
             'https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js',
-            'https://fonts.googleapis.com',
+            'https://fonts.loli.net',
             'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js',
             'https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js'
         ],

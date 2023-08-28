@@ -67,8 +67,8 @@ class CaseRegistration(models.Model):
     description = fields.Html('Description', required=True,
                               help="Case Details")
     opposition_name = fields.Char('Name', help="Name of Opposite Party")
-    opposite_lawyer = fields.Char('Lawyer', help="Name of opposite Lawyer")
-    opp_party_contact = fields.Char('Contact No')
+    opposite_lawyer = fields.Char('Opposite Lawyer', help="Name of opposite Lawyer")
+    opp_party_contact = fields.Char('Contacts No')
     victim_ids = fields.One2many('case.victim', 'registration_id',
                                  help="List of Victims")
     sitting_detail_ids = fields.One2many('case.sitting', 'case_id')

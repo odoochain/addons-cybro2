@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+    <data noupdate="0">
         <!--        Odoo 16 Development Tutorial-->
         <record id="slide_channel_odoo16_development" model="slide.channel">
             <field name="name">Odoo 16 Development Tutorial</field>
@@ -11,10 +11,7 @@
             <field name="promote_strategy">most_voted</field>
             <field name="is_published" eval="True"/>
             <field name="tag_ids" eval="[(5, 0),
-                     (4, ref('website_slides.slide_channel_tag_level_basic')),
-                     (4, ref('website_slides.slide_channel_tag_role_gardener')),
-                     (4, ref('website_slides.slide_channel_tag_other_0')),
-                     (4, ref('website_slides.slide_channel_tag_other_2'))]"/>
+                     (4, ref('website_slides.slide_channel_tag_level_basic'))]"/>
             <field name="image_1920" type="base64"
                    file="website_slides/static/src/img/channel_demo_gardening.jpg"/>
             <field name="description">Learn the basics of odoo !</field>

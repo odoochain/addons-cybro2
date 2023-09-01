@@ -36,7 +36,7 @@
                                             </span>
                                         </label>
                                         <div class="col-sm">
-                                            <textarea id="description"
+                                            <textarea id="text_description"
                                                       type="text"
                                                       class="form-control
                                                       s_website_form_input"

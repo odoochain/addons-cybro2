@@ -45,7 +45,11 @@ class LegalEvidence(models.Model):
     attachment_count = fields.Integer(compute='_compute_attachment_count',
                                       help="Count of attachments")
 
-    @api.model
+    # ------------------------------------------------------------
+    # CRUD
+    # ------------------------------------------------------------
+
+    @api.model_create_multi
     def create(self, vals):
         """Generate Sequence For Evidence"""
         if vals.get('name', 'New') == 'New':

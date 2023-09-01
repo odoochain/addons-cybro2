@@ -51,7 +51,11 @@ class LegalTrial(models.Model):
     is_invoiced = fields.Boolean('is invoiced', help="Is trial invoiced",
                                  default=False)
 
-    @api.model
+    # ------------------------------------------------------------
+    # CRUD
+    # ------------------------------------------------------------
+
+    @api.model_create_multi
     def create(self, vals):
         """Generate Sequence For Evidence"""
         if vals.get('name', 'New') == 'New':

@@ -26,7 +26,7 @@
     'summary': 'Facebook Messenger. '
                'This helps your customers to contact you using Facebook Messenger.',
     'description': "Let's make it easier for your customers to contact you by"
-                   "using Facebook Messenger.",
+                   "using Facebook Messenger.Need https connection.",
     'author': 'Cybrosys Techno Solutions',
     'depends': ['base', 'website', 'website_sale'],
     'company': 'Cybrosys Techno Solutions',

@@ -80,7 +80,7 @@
                                                         <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
                                                            t-attf-class="dropdown-item js_change_lang #{active_lang == lg and 'active'}"
                                                            t-att-data-url_code="lg[1]">
-                                                            <span t-if="not no_text" t-esc="lg[2].split('/').pop()"/>
+                                                            <span t-if="not no_text" t-out="lg[2].split('/').pop()"/>
                                                         </a>
                                                     </t>
                                                 </div>

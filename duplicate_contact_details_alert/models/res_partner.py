@@ -28,7 +28,7 @@ import ast
 class ResPartner(models.Model):
     _inherit = 'res.partner'
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals):
         unique_contact_ids = self.env[
             'ir.config_parameter'].sudo().get_param(

@@ -28,6 +28,8 @@ class ResConfigSettings(models.TransientModel):
     """Class used to add field to res.config"""
     _inherit = 'res.config.settings'
     _name = 'res.config.settings'
-    openai_image_endpoint = fields.Char('End Point', default='https://api.openai.com/v1/images/generations')
+    openai_image_endpoint = fields.Char('Image End Point',
+                                        config_parameter='openai_image_endpoint',
+                                        default='https://api.openai.com/v1/images/generations')
 
 

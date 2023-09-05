@@ -63,9 +63,9 @@ class ImageSuggestion(models.TransientModel):
                ' "prompt": "' + self.image_prompt + '", "num_images": ' +\
                str(self.num_image) + ', "size": "' \
                + self.size_image + '", "response_format": "url"}'
-
-        resp = requests.post(str(self.env['ir.config_parameter'].sudo().get_param(
-            'openai_api_base')) + "/images/generations",
+        image_endpoint = str(self.env['ir.config_parameter'].sudo().get_param(
+            'openai_image_endpoint'))
+        resp = requests.post(image_endpoint,
                              headers=headers, data=data)
         if resp.status_code != 200:
             raise ValidationError("Failed to generate image")

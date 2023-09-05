@@ -30,7 +30,8 @@ class ResPartner(models.Model):
     image_1920 = fields.Image(max_width=1920, max_height=1920,
                               required=True, string="Image",
                               help="The field hold the image of customer")
-    phone = fields.Char(unaccent=False, required=True,
+    phone = fields.Char(unaccent=False,
+                        # required=True,
                         string="Phone",
                         help="The field hold the phone number of customer")
     function = fields.Char(string='Job Position',

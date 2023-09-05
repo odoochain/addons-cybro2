@@ -31,7 +31,7 @@
     'maintainer': 'Cybrosys Techno Solutions',
     'images': ['static/description/banner.png'],
     'website': 'https://www.cybrosys.com',
-    'depends': ['base',
+    'depends': [
                 'base_setup',
                 ],
     # 'excludes': [

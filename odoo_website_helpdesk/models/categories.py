@@ -23,8 +23,9 @@ from odoo import fields, models
 
 
 class HelpdeskCategories(models.Model):
+    """Category Model"""
     _name = 'helpdesk.categories'
     _description = 'Categories'
 
-    name = fields.Char('Name')
-    sequence = fields.Integer('Sequence', default=0)
+    name = fields.Char('Name', help='Category Name')
+    sequence = fields.Integer('Sequence', default=0, help='Sequence')

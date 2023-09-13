@@ -21,7 +21,7 @@
 ################################################################################
 {
     'name': 'Website PDF Preview Snippet',
-    'version': '16.0.1.0.0',
+    'version': '16.0.1.0.1',
     'summary': 'Snippet for Previewing PDF Files on Website',
     'description': "The Website PDF Preview Snippet is a module that provides "
                    "functionality for uploading and previewing PDF files on a "
@@ -31,7 +31,7 @@
     'author': 'Cybrosys Techno Solutions',
     'company': 'Cybrosys Techno Solutions',
     'maintainer': 'Cybrosys Techno Solutions',
-    'depends': ['base', 'website', ],
+    'depends': ['base', 'website', 'pdf_helper',],
     'website': 'https://www.cybrosys.com',
     'data': [
         'views/pdf_preview_snippet.xml',

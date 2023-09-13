@@ -32,7 +32,6 @@ ListController.prototype.actionDef = async function(){
         'grouped_by':this.model.root.groupBy,
         'context': this.props.context,
         'domain':this.model.root.domain,
-        'context':this.props.context,
         }).then( function (data){
             if (self.model.root.groupBy[0]){
                 var group_length=Array.from(Array(self.model.root.groups));

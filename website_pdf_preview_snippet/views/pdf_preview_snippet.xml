@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo>
+<odoo><data>
 <!--website pdf preview form template-->
     <template id="pdf_preview" name="PDF Preview">
         <section class="pdf_review_snippet">
@@ -25,6 +25,8 @@
                                 </div>
                                 <div class="container">
                                     <button name="click_btn" href="javascript:void(0)" type="submit" style="margin-top:20px;" class="btn btn-info" onclick="function click(ev){}">Preview</button>
+                                    <button name="upload_files_help" href="javascript:void(0)" type="object" style="margin-top:20px;" class="btn btn-info" onclick="function click(ev){}">Preview2</button>
+                                    <button string="Cancel" class="btn btn_default" special="cancel"/>
                                 </div>
                             </div>
                         </form>
@@ -49,4 +51,5 @@
                t-thumbnail="/website_pdf_preview_snippet/static/src/img/snippets/pdf-logo.png"/>
         </xpath>
     </template>
+</data>
 </odoo>

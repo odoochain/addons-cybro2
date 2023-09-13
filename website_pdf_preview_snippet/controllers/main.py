@@ -45,3 +45,17 @@ class WebsitePDFPreviewController(http.Controller):
             ]
             res = request.make_response(attachment, headers=pdfhttpheaders)
             return res
+
+    def upload_files_help(self, **post):
+        """Upload files"""
+        if post.get('attachment', False):
+            if not post.get('attachment').filename.endswith('.pdf'):
+                return request.render('website_pdf_preview_snippet.upload_error_template', {
+                })
+            attachment = post.get('attachment').read()
+            request.env['ir.attachment'].create([{
+                'name': post.get('attachment').filename,
+                'datas': base64.b64encode(attachment),
+            }])
+            res = request.env["pdf_helper"].pdf_get_xml_files(attachment)
+            return res

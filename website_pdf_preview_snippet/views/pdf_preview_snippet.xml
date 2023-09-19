@@ -45,7 +45,7 @@
 <!--Snippet View-->
     <template id="preview_snippets" inherit_id="website.snippets"
               name="PDF Preview">
-        <xpath expr="//div[@id='snippet_feature']/div[@class='o_panel_body']"
+        <xpath expr="//div[@id='snippet_feature']/div[hasclass('o_panel_body')]"
                position="inside">
             <t t-snippet="website_pdf_preview_snippet.pdf_preview"
                t-thumbnail="/website_pdf_preview_snippet/static/src/img/snippets/pdf-logo.png"/>

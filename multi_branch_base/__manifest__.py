@@ -33,6 +33,8 @@
     'maintainer': "Cybrosys Techno Solutions",
     'website': "https://www.cybrosys.com",
     'category': 'Tools',
+    "excludes": ["branch",
+                 ],
     'depends': ['sale_management',
                 'sale_stock', 'purchase_stock',
                 'stock_account'],

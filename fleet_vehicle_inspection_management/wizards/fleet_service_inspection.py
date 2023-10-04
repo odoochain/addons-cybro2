@@ -61,7 +61,7 @@ class FleetServiceInspection(models.TransientModel):
     amount = fields.Monetary(string='Cost', help='Amount',)
     date = fields.Date(string='Vehicle Service Date',
                        help='Vehicle Service Date',
-                       String='Vehicle Service Date')
+                       string='Vehicle Service Date')
     company_id = fields.Many2one('res.company', string='Company',
                                  help='Company',
                                  default=lambda self: self.env.company)

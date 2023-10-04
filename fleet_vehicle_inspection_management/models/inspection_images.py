@@ -29,7 +29,7 @@ class InspectionImages(models.Model):
     _name = 'inspection.images'
     _description = 'Inspection Images'
 
-    name = fields.Char(String='Image Name', help='Image name')
+    name = fields.Char(string='Image Name', help='Image name')
     image = fields.Binary(string='Image', help='Inspection Image')
     inspection_id = fields.Many2one('inspection.request',
                                     help='Vehicle inspection',

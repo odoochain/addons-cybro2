@@ -28,7 +28,7 @@ class RollBackRecord(models.Model):
     _name = 'rollback.record'
     _description = 'Record History'
 
-    history = fields.Text(String='Record History',
+    history = fields.Text(string='Record History',
                           help="The affected fields and "
                                "their values will be shown.")
     res_model = fields.Char(string='Model',

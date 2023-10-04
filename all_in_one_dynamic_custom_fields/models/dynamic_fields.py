@@ -39,7 +39,7 @@ class DynamicFields(models.Model):
         field_list.remove(('reference', 'reference'))
         return field_list
 
-    position_field = fields.Many2one('ir.model.fields', string='Field Name',
+    position_field = fields.Many2one('ir.model.fields', string='Field Position',
                                      required=True,
                                      ondelete='cascade')
     position = fields.Selection([('before', 'Before'),
@@ -48,11 +48,11 @@ class DynamicFields(models.Model):
     model_id = fields.Many2one('ir.model', string='Model', required=True,
                                index=True, ondelete='cascade',
                                help="The model this field belongs to")
-    ref_model_id = fields.Many2one('ir.model', string='Model', index=True)
-    selection_field = fields.Char(string="Selection Options")
-    rel_field = fields.Many2one('ir.model.fields', string='Related Field')
+    ref_model_id = fields.Many2one('ir.model', string='Ref Model', index=True)
+    selection_field = fields.Char(string="Selection Field")
+    rel_field = fields.Many2one('ir.model.fields', string='Rel Field')
     field_type = fields.Selection(selection='get_possible_field_types',
-                                  string='Field Type', required=True)
+                                  string='Possible Type', required=True)
     ttype = fields.Selection(string="Field Type", related='field_type')
     widget = fields.Many2one('dynamic.field.widgets', string='Widget')
     groups = fields.Many2many('res.groups', 'employee_dynamic_fields_group_rel',
@@ -62,7 +62,7 @@ class DynamicFields(models.Model):
         ('draft', 'Draft'),
         ('form', 'Field Created'),
         ('tree', 'Added in Tree View'),
-    ], string='Status', index=True, readonly=True, tracking=True,
+    ], string='Status', index=True, readonly=True,
         copy=False, default='draft',
         required=True, help='Record Status')
 

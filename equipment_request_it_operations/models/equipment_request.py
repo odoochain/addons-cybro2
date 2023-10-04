@@ -110,23 +110,23 @@ class EquipmentRequest(models.Model):
                                       "expensed or not")
     equipment_request_ids = fields.One2many('equipment.detail',
                                             'equipment_detail_id',
-                                            String='Request Equipments',
+                                            string='Request Equipments',
                                             help="Equipment details for the "
                                                  "equipment request")
     equipment_damage_ids = fields.One2many('damage.detail',
                                            'equipment_damage_id',
-                                           String='Damage Details',
+                                           string='Damage Details',
                                            help="Details of damages (if any) "
                                                 "for"
                                                 "the equipment")
     equipment_expense_ids = fields.One2many('hr.expense',
                                             'equipment_expense_id',
-                                            String='Expenses',
+                                            string='Expenses',
                                             help="Expenses (if any) associated "
                                                  "with the equipment request")
     equipment_internal_ids = fields.One2many('stock.picking',
                                              'equipment_transfer_id',
-                                             String='Internal Orders',
+                                             string='Internal Orders',
                                              help="The internal orders "
                                                   "related to"
                                                   "this equipment request.")

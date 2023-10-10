@@ -33,7 +33,7 @@ class Orientation(models.Model):
                                     required=True)
     date = fields.Datetime(string="Date")
     responsible_user_id = fields.Many2one('res.users', string='Responsible User')
-    employee_company_id = fields.Many2one('res.company', string='Company', required=True,
+    employee_company_id = fields.Many2one('res.company', string='Employee Company', required=True,
                                           default=lambda self: self.env.user.company_id)
     parent_id = fields.Many2one('hr.employee', string='Manager', related='employee_id.parent_id')
     job_id = fields.Many2one('hr.job', string='Job Title', related='employee_id.job_id',

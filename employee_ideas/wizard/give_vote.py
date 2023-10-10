@@ -28,6 +28,7 @@ class GiveVote(models.TransientModel):
     add their comments, and also they can submit their votes"""
     _name = 'give.vote'
     _description = "Give Votes"
+    _inherit = 'mail.thread'
 
     comments = fields.Text(string="Comments", help="Comments")
     employee_ideas_id = fields.Many2one('employee.idea', help='Connect the model'

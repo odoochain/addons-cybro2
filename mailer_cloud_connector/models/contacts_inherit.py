@@ -23,7 +23,7 @@ class InheritContacts(models.Model):
             else:
                 rec.partner_type = None
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals_list):
         res = super(InheritContacts, self).create(vals_list)
         contact_sync = self.env['mailer.cloud.api.sync'].search(

@@ -95,7 +95,7 @@ class EmployeeIdeas(models.Model):
                                                       'Approval button for'
                                                       ' employee')
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals):
         """This function create the reference number"""
         if vals.get('reference_no', _('New')) == _('New'):

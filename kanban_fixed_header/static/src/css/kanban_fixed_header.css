@@ -1,0 +1,7 @@
+.o_kanban_header {
+  position: sticky;
+  z-index: 1;
+  background-color: white;
+}
+
+/*# sourceMappingURL=kanban_fixed_header.css.map */

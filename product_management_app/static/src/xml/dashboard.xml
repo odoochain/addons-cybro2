@@ -125,7 +125,7 @@
                                             <div class="stat-content">
                                                 <div class="stat-head">Product Category</div>
                                                 <div class="stat_count">
-                                                    <span id="categ">
+                                                    <span id="categ1">
                                                         <div id="product_categ"/>
                                                     </span>
 
@@ -145,7 +145,7 @@
                                             <div class="stat-content">
                                                 <div class="stat-head">Price Lists</div>
                                                 <div class="stat_count">
-                                                    <span id="categ">
+                                                    <span id="categ2">
                                                         <div id="product_pricelist"/>
                                                     </span>
 
@@ -165,7 +165,7 @@
                                             <div class="stat-content">
                                                 <div class="stat-head">Product Attribute</div>
                                                 <div class="stat_count">
-                                                    <span id="categ">
+                                                    <span id="categ3">
                                                         <div id="product_attribute"/>
                                                     </span>
 

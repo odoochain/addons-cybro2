@@ -1,0 +1,56 @@
+.c_login_container {
+  background: #fff !important;
+  width: 100% !important;
+}
+.c_login_container .card-body {
+  background-color: transparent !important;
+}
+
+.input-group-prepend .input-group-text {
+  border-radius: 0px !important;
+  border-right: 0px !important;
+  background: transparent !important;
+}
+
+.form-control {
+  border-radius: 0px !important;
+  border-color: #d4d4d4 !important;
+  background-color: none;
+}
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.btn {
+  border-radius: 0px;
+}
+.btn:hover {
+  filter: brightness(90%) !important;
+  box-shadow: none;
+  transition: all 0.4s linear;
+}
+
+.btn-primary {
+  background-color: #00A97F !important;
+  border-color: #00A97F !important;
+  color: #fff !important;
+}
+.btn-primary:hover {
+  background-color: #009872 !important !important;
+}
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(235, 240, 253, 0.8);
+}
+
+a, .btn-link {
+  color: #00A97F;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover, .btn-link:hover {
+  color: #009872 !important;
+  text-decoration: none !important;
+  transition: all 0.4s linear;
+}
+
+/*# sourceMappingURL=login_green.css.map */

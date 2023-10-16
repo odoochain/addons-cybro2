@@ -26,6 +26,7 @@ from odoo.exceptions import UserError, ValidationError
 
 class InsuranceDetails(models.Model):
     _name = 'insurance.details'
+    _description = 'Insurance Details List'
 
     name = fields.Char(
         string='Name', required=True, copy=False, readonly=True, index=True,
@@ -97,7 +98,7 @@ class InsuranceDetails(models.Model):
 
     def action_close_insurance(self):
         for records in self.invoice_ids:
-            if records.state == 'paid':
+            if records.payment_state == 'paid':
                 raise UserError(_("All invoices must be paid"))
         self.state = 'closed'
         self.close_date = fields.Date.context_today(self)

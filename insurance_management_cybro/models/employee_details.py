@@ -28,6 +28,7 @@ from odoo.exceptions import UserError, ValidationError
 
 class EmployeeDetails(models.Model):
     _name = 'employee.details'
+    _description = 'Employee Details'
 
     name = fields.Char(string='Name', required=True)
     user_id = fields.Many2one(

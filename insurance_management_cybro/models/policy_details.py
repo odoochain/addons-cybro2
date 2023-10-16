@@ -25,6 +25,7 @@ from odoo import fields, models
 
 class PolicyDetails(models.Model):
     _name = 'policy.details'
+    _description = '条款'
 
     name = fields.Char(string='Name', required=True)
     policy_type_id = fields.Many2one(

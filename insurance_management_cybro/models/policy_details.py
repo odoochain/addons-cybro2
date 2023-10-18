@@ -25,7 +25,7 @@ from odoo import fields, models
 
 class PolicyDetails(models.Model):
     _name = 'policy.details'
-    _description = '条款'
+    _description = 'Policy'
 
     name = fields.Char(string='Name', required=True)
     policy_type_id = fields.Many2one(
@@ -43,5 +43,6 @@ class PolicyDetails(models.Model):
 
 class PolicyType(models.Model):
     _name = 'policy.type'
+    _description = 'The tyepe of insurance policy'
 
     name = fields.Char(string='Name')

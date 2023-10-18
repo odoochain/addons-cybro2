@@ -98,15 +98,18 @@ class InsuranceDetails(models.Model):
 
     def action_close_insurance(self):
         for records in self.invoice_ids:
-            if records.payment_state == 'paid':
+            if records.payment_state == 'not_paid':
                 raise UserError(_("All invoices must be paid"))
         self.state = 'closed'
         self.close_date = fields.Date.context_today(self)
         self.hide_inv_button = False
 
-    @api.model
-    def create(self, vals):
-        if vals.get('name', 'New') == 'New':
+    @api.model_create_multi
+    def create(self, values):
+        """ For adding sequence number """
+        vals = values[0]
+        if vals.get('name', 'New'):
             vals['name'] = self.env['ir.sequence'].next_by_code(
-                'insurance.details') or 'New'
-        return super(InsuranceDetails, self).create(vals)
+                'user.audit.log') or 'New'
+        res = super(InsuranceDetails, self).create(vals)
+        return res

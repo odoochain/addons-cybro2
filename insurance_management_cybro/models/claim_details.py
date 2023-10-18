@@ -51,7 +51,7 @@ class ClaimDetails(models.Model):
                                  readonly=True, copy=False)
     note_field = fields.Html(string='Comment')
 
-    @api.model
+    @api.model_create_multi
     def create(self, vals):
         if vals.get('name', 'New') == 'New':
             vals['name'] = self.env['ir.sequence'].next_by_code(

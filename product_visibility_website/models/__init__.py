@@ -20,4 +20,6 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 ################################################################################
+from . import website
+from . import res_config_settings
 from . import website_product_visibility

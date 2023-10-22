@@ -75,12 +75,7 @@ class ProductVisibilityCon(WebsiteSale):
             domains.append([('public_categ_ids', 'child_of', categories.ids)])
         return expression.AND(domains)
 
-    @http.route([
-        '/shop',
-        '/shop/page/<int:page>',
-        '/shop/category/<model("product.public.category"):category>',
-        '/shop/category/<model("product.public.category"):category>/page/<int:page>',
-    ], type='http', auth="public", website=True, sitemap=sitemap_shop)
+    @http.route(type='http', auth="public", website=True)
     def shop(self, page=0, category=None, search='', min_price=0.0,
              max_price=0.0, ppg=False, **post):
         available_categ = available_products = ''
@@ -91,14 +86,15 @@ class ProductVisibilityCon(WebsiteSale):
                 'filter_mode')
             products = literal_eval(
                 request.env['ir.config_parameter'].sudo().get_param(
-                    'website_product_visibility.available_product_ids',
-                    'False'))
+                    'website_product_visibility.'
+                    'available_products_for_guest_ids', 'False'))
             if mode == 'product_only':
                 available_products = request.env['product.template'].search(
                     [('id', 'in', products)])
             cat = literal_eval(
                 request.env['ir.config_parameter'].sudo().get_param(
-                    'website_product_visibility.available_cat_ids', 'False'))
+                    'website_product_visibility.available_cat_for_guest_ids',
+                    'False'))
             available_categ = request.env['product.public.category'].search(
                 [('id', 'in', cat)])
         else:
@@ -119,7 +115,28 @@ class ProductVisibilityCon(WebsiteSale):
             categ = Category.search([('parent_id', '=', False), (
                 'product_tmpl_ids', 'in', available_products.ids)])
         # supering shop***
-        if not available_categ and not available_products:
+        if not available_categ and not available_products and \
+                request.env.user.has_group(
+                    'base.group_portal'):
+            mode = request.env['ir.config_parameter'].sudo().get_param(
+                'filter_mode_portal')
+            products = literal_eval(
+                request.env['ir.config_parameter'].sudo().get_param(
+                    'website_product_visibility.'
+                    'available_products_for_portal_ids', 'False'))
+            if mode == 'product_only':
+                available_products = request.env['product.template'].search(
+                    [('id', 'in', products)])
+            cat = literal_eval(
+                request.env['ir.config_parameter'].sudo().get_param(
+                    'website_product_visibility.available_cat_for_portal_ids',
+                    'False'))
+            available_categ = request.env['product.public.category'].search(
+                [('id', 'in', cat)])
+
+        if not available_categ and not available_products and \
+                not request.env.user.has_group(
+                    'base.group_user'):
             return super(ProductVisibilityCon, self).shop(page, category,
                                                           search, ppg, **post)
         add_qty = int(post.get('add_qty', 1))
@@ -195,20 +212,24 @@ class ProductVisibilityCon(WebsiteSale):
             conversion_rate=conversion_rate,
             **post
         )
-        fuzzy_search_term, product_count, search_product = self._shop_lookup_products(
-            attrib_set, options, post, search, website)
+        fuzzy_search_term, product_count, search_product = \
+            self._shop_lookup_products(
+                attrib_set, options, post, search, website)
         filter_by_price_enabled = website.is_view_active(
             'website_sale.filter_products_price')
         if filter_by_price_enabled:
-            # TODO Find an alternative way to obtain the domain through the search metadata.
+            # TODO Find an alternative way to obtain the domain through the
+            #  search metadata.
             Product = request.env['product.template'].with_context(
                 bin_size=True)
             domain = self._get_search_domain(search, category, attrib_values)
-            # This is ~4 times more efficient than a search for the cheapest and most expensive products
+            # This is ~4 times more efficient than a search for the cheapest
+            # and most expensive products
             from_clause, where_clause, where_params = Product._where_calc(
                 domain).get_sql()
             query = f"""
-                   SELECT COALESCE(MIN(list_price), 0) * {conversion_rate}, COALESCE(MAX(list_price), 0) * {conversion_rate}
+                   SELECT COALESCE(MIN(list_price), 0) * {conversion_rate}, 
+                   COALESCE(MAX(list_price), 0) * {conversion_rate}
                      FROM {from_clause}
                     WHERE {where_clause}
                """
@@ -222,10 +243,12 @@ class ProductVisibilityCon(WebsiteSale):
                 # price filter is set to their respective available prices when the specified
                 # min exceeds the max, and / or the specified max is lower than the available min.
                 if min_price:
-                    min_price = min_price if min_price <= available_max_price else available_min_price
+                    min_price = min_price if min_price <= available_max_price \
+                        else available_min_price
                     post['min_price'] = min_price
                 if max_price:
-                    max_price = max_price if max_price >= available_min_price else available_max_price
+                    max_price = max_price if max_price >= available_min_price \
+                        else available_max_price
                     post['max_price'] = max_price
         website_domain = website.website_domain()
         categs_domain = [('parent_id', '=', False)] + website_domain
@@ -334,102 +357,3 @@ class ProductVisibilityCon(WebsiteSale):
         partner = request.env['res.partner'].sudo().search(
             [('id', '=', user.partner_id.id)])
         return partner.website_available_product_ids
-
-    # --------------------------------------------------------------------------
-    # Products Search Bar
-    # --------------------------------------------------------------------------
-
-    @http.route('/shop/products/autocomplete', type='json', auth='public',
-                website=True)
-    def products_autocomplete(self, term, options={}, **kwargs):
-        """
-        Returns list of products according to the term and product options
-        Params:
-            term (str): search term written by the user
-            options (dict)
-                - 'limit' (int), default to 5: number of products to consider
-                - 'display_description' (bool), default to True
-                - 'display_price' (bool), default to True
-                - 'order' (str)
-                - 'max_nb_chars' (int): max number of characters for the
-                                        description if returned
-        Returns:
-            dict (or False if no result)
-                - 'products' (list): products (only their needed field values)
-                        note: the prices will be strings properly formatted and
-                        already containing the currency
-                - 'products_count' (int): the number of products in the database
-                        that matched the search query
-        """
-        user = request.env['res.users'].sudo().search(
-            [('id', '=', request.env.user.id)])
-        available_categ = available_products = ''
-        if not user:
-            mode = request.env['ir.config_parameter'].sudo().get_param(
-                'filter_mode')
-            products = literal_eval(
-                request.env['ir.config_parameter'].sudo().get_param(
-                    'website_product_visibility.available_product_ids',
-                    'False'))
-            if mode == 'product_only':
-                available_products = request.env['product.template'].search(
-                    [('id', 'in', products)])
-            cat = literal_eval(
-                request.env['ir.config_parameter'].sudo().get_param(
-                    'website_product_visibility.available_cat_ids',
-                    'False'))
-            available_categ = request.env['product.public.category'].search(
-                [('id', 'in', cat)])
-        else:
-            partner = request.env['res.partner'].sudo().search(
-                [('id', '=', user.partner_id.id)])
-            mode = partner.filter_mode
-            if mode != 'categ_only':
-                available_products = self.available_products()
-            available_categ = partner.website_available_cat_ids
-        ProductTemplate = request.env['product.template']
-        display_description = options.get('display_description', True)
-        display_price = options.get('display_price', True)
-        order = self._get_search_order(options)
-        max_nb_chars = options.get('max_nb_chars', 999)
-        category = options.get('category')
-        attrib_values = options.get('attrib_values')
-        if not available_products and not available_categ:
-            domain = self._get_search_domain(term, category, attrib_values,
-                                             display_description)
-        else:
-            domain = self.reset_domain(term, available_categ,
-                                       available_products, attrib_values,
-                                       display_description)
-        products = ProductTemplate.search(
-            domain,
-            limit=min(20, options.get('limit', 5)),
-            order=order
-        )
-        fields = ['id', 'name', 'website_url']
-        if display_description:
-            fields.append('description_sale')
-        res = {
-            'products': products.read(fields),
-            'products_count': ProductTemplate.search_count(domain),
-        }
-        if display_description:
-            for res_product in res['products']:
-                desc = res_product['description_sale']
-                if desc and len(desc) > max_nb_chars:
-                    res_product['description_sale'] = "%s..." % desc[:(
-                            max_nb_chars - 3)]
-        if display_price:
-            FieldMonetary = request.env['ir.qweb.field.monetary']
-            monetary_options = {
-                'display_currency': request.website.get_current_pricelist().currency_id,
-            }
-            for res_product, product in zip(res['products'], products):
-                combination_info = product._get_combination_info(
-                    only_template=True)
-                res_product.update(combination_info)
-                res_product['list_price'] = FieldMonetary.value_to_html(
-                    res_product['list_price'], monetary_options)
-                res_product['price'] = FieldMonetary.value_to_html(
-                    res_product['price'], monetary_options)
-        return res

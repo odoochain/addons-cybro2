@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+    <data noupdate="1">
         <!--        Odoo 15 Development Tutorial-->
         <record id="slide_channel_odoo15_development" model="slide.channel">
             <field name="name">Odoo 15 Development Tutorial</field>

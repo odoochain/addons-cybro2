@@ -50,9 +50,6 @@
   text-align: center;
   color: #00438b; }
 
-.mb-0{
-    position: relative;
-}
 .mb-0 .dash-title {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.81);
@@ -60,10 +57,9 @@
 
 .oh-card {
 
-    padding-top: 0px;
-    padding: 0px;
+    padding: 0;
     margin-bottom: 1.5rem;
-    border-radius: 0px;
+    border-radius: 0;
     box-shadow: none;
     background: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -83,7 +79,6 @@
 }
 .oh-data .stat-icon {
 
-    width: 30%;
     height: 85px;
     text-align: center;
     background: #ff8762;
@@ -144,10 +139,9 @@ h4 .stat-count {
     font-size: 17px;
     text-align: center;
     color: #000 !important;
-    margin-top: 0px;
+    margin-top: 0;
     width: 100%;
     float: left;
-    margin: 0;
 }
 
 .stat-head {

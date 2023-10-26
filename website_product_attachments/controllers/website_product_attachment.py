@@ -22,6 +22,9 @@
 # -*- coding: utf-8 -*-
 
 import base64
+import mimetypes
+import os
+
 from werkzeug.utils import redirect
 import io
 from odoo import http
@@ -70,7 +73,15 @@ class WebsiteSale(WebsiteSale):
                 return request.not_found()
         elif attachment["datas"]:
             data = io.BytesIO(base64.standard_b64decode(attachment["datas"]))
-            return http.send_file(data, filename=attachment['name'],
-                                  as_attachment=True)
+            # we follow what is done in ir_http's binary_content for the extension management
+            extension = os.path.splitext(attachment["name"] or '')[1]
+            extension = extension if extension else mimetypes.guess_extension(attachment["mimetype"] or '')
+            filename = attachment['name']
+            filename = filename if os.path.splitext(filename)[1] else filename + extension
+            return http.send_file(data, filename=filename, as_attachment=True)
+
+            # return http.send_file(data, filename=attachment['name'],
+            #                       as_attachment=True)
+        # D:\ocb16\addons\website_sale_digital\controllers\main.py
         else:
             return request.not_found()

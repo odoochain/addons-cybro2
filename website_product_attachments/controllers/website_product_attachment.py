@@ -32,12 +32,12 @@ from odoo.http import request
 from odoo.addons.website_sale.controllers.main import WebsiteSale
 
 
-class WebsiteSale(WebsiteSale):
+class WebsiteSaleAttachment(WebsiteSale):
     @http.route(['/shop/<model("product.template"):product>'], type='http',
                 auth="public", website=True)
     def product(self, product, category='', search='', **kwargs):
-        res = super(WebsiteSale, self).product(product, category='', search='',
-                                               **kwargs)
+        res = super(WebsiteSaleAttachment, self).product(product, category='', search='',
+                                                         **kwargs)
         attachments = request.env['ir.attachment'].sudo().search(
             [('res_model', '=', 'product.template'),
              ('res_id', '=', product.id)], order='id').filtered(lambda att: not att.access_token)

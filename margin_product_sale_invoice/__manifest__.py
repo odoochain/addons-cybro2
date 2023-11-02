@@ -3,7 +3,7 @@
 #
 #    Cybrosys Technologies Pvt. Ltd.
 #
-#    Copyright (C) 2021-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
+#    Copyright (C) 2023-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
 #    Author: Cybrosys Techno Solutions(<https://www.cybrosys.com>)
 #
 #    You can modify it under the terms of the GNU LESSER
@@ -20,30 +20,30 @@
 #
 #############################################################################
 {
-    "name": "CRM Kit",
-    "version": '16.0.1.0.0',
-    "category": 'Sales',
-    'summary': """Complete CRM Kit for odoo16""",
-    'description': """Complete CRM Kit for odoo16, CRM, CRM dashboard, 
-    crm commission, commission plan, crm features""",
+    'name': 'Margin on Products, Sales & Invoices',
+    'version': '16.0.1.0.0',
+    'summary': 'Providing margin on products, sales and invoices',
+    'sequence': 4,
+    'description': """This module is developed to help to provide the 
+    margin on product,sales, and invoice""",
+    'category': 'Sales',
     'author': 'Cybrosys Techno Solutions',
     'company': 'Cybrosys Techno Solutions',
     'maintainer': 'Cybrosys Techno Solutions',
-    'website': "https://www.cybrosys.com",
-    "depends": ['sale_management', 'crm', 'crm_dashboard'],
-    "data": [
-        'security/ir.model.access.csv',
-        'views/commission.xml',
-        'wizard/commission_report.xml',
+    'website': 'https://www.cybrosys.com',
+    'depends': [
+        'base',
+        'sale_management',
+        'stock',
+        'account',
     ],
-    'assets': {
-        'web.assets_backend': [
-            'crm_kit/static/src/js/action_manager.js',
-        ],
-    },
-    'images': [
-        'static/description/banner.png',
+    'data': [
+        'report/sale_report_views.xml',
+        'views/product_product_views.xml',
+        'views/sale_order_views.xml',
+        'views/account_move_views.xml',
     ],
+    'images': ['static/description/banner.png'],
     'license': 'LGPL-3',
     'installable': True,
     'application': False,

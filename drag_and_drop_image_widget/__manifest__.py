@@ -3,8 +3,8 @@
 #
 #    Cybrosys Technologies Pvt. Ltd.
 #
-#    Copyright (C) 2021-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
-#    Author: Cybrosys Techno Solutions(<https://www.cybrosys.com>)
+#    Copyright (C) 2023-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
+#    Author: Cybrosys (<https://www.cybrosys.com>)
 #
 #    You can modify it under the terms of the GNU LESSER
 #    GENERAL PUBLIC LICENSE (LGPL v3), Version 3.
@@ -20,32 +20,28 @@
 #
 #############################################################################
 {
-    "name": "CRM Kit",
-    "version": '16.0.1.0.0',
-    "category": 'Sales',
-    'summary': """Complete CRM Kit for odoo16""",
-    'description': """Complete CRM Kit for odoo16, CRM, CRM dashboard, 
-    crm commission, commission plan, crm features""",
+    'name': 'Drag and Drop Widget',
+    'version': '16.0.1.0.0',
+    'category': 'Extra Tools',
+    'summary': 'This is a widget for Drag and drop images into the '
+               'image field',
+    'description': "This module is used to drag and drop files into the "
+                   "image field",
     'author': 'Cybrosys Techno Solutions',
-    'company': 'Cybrosys Techno Solutions',
     'maintainer': 'Cybrosys Techno Solutions',
-    'website': "https://www.cybrosys.com",
-    "depends": ['sale_management', 'crm', 'crm_dashboard'],
-    "data": [
-        'security/ir.model.access.csv',
-        'views/commission.xml',
-        'wizard/commission_report.xml',
-    ],
+    'company': 'Cybrosys Techno Solutions',
+    'website': 'https://www.cybrosys.com',
+    'depends': ['base', 'web'],
+    'images': ['static/description/banner.jpg'],
     'assets': {
         'web.assets_backend': [
-            'crm_kit/static/src/js/action_manager.js',
-        ],
+            'drag_and_drop_image_widget/static/src/scss/drag_and_drop.scss',
+            'drag_and_drop_image_widget/static/src/js/drag_and_drop.js',
+            'drag_and_drop_image_widget/static/src/xml/drag_and_drop_templates.xml'
+        ]
     },
-    'images': [
-        'static/description/banner.png',
-    ],
     'license': 'LGPL-3',
     'installable': True,
-    'application': False,
     'auto_install': False,
+    'application': False,
 }

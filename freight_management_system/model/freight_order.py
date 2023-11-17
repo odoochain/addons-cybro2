@@ -246,7 +246,7 @@ class FreightOrder(models.Model):
             rec.state = 'submit'
             base_url = self.env['ir.config_parameter'].sudo().get_param(
                 'web.base.url')
-            Urls = urls.url_join(base_url, 'web#id=%(id)s&model=freight.order&view_type=form' % {'id': self.id})
+            Urls = urljoin(base_url, 'web#id=%(id)s&model=freight.order&view_type=form' % {'id': self.id})
 
             mail_content = _('Hi %s,<br>'
                              'The Freight Order %s is Submitted'
@@ -286,7 +286,7 @@ class FreightOrder(models.Model):
                 if clearance.state == 'confirm':
                     rec.state = 'confirm'
                     base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
-                    Urls = urls.url_join(base_url, 'web#id=%(id)s&model=freight.order&view_type=form' % {'id': self.id})
+                    Urls = urljoin(base_url, 'web#id=%(id)s&model=freight.order&view_type=form' % {'id': self.id})
                     mail_content = _('Hi %s,<br> '
                                      'The Freight Order %s is Confirmed '
                                      '<div style = "text-align: center; '
@@ -334,7 +334,7 @@ class FreightOrder(models.Model):
         for rec in self:
             base_url = self.env['ir.config_parameter'].sudo().get_param(
                 'web.base.url')
-            Urls = urls.url_join(base_url, 'web#id=%(id)s&model=freight.order&view_type=form' % {'id': self.id})
+            Urls = urljoin(base_url, 'web#id=%(id)s&model=freight.order&view_type=form' % {'id': self.id})
 
             mail_content = _('Hi %s,<br>'
                              'The Freight Order %s is Completed'

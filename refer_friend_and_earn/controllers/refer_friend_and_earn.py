@@ -20,7 +20,7 @@
 #
 #############################################################################
 import random, werkzeug
-from werkzeug.urls import url_encode
+from urllib.parse import urlencode
 from odoo import _, http
 from odoo.addons.auth_signup.controllers.main import AuthSignupHome
 from odoo.addons.website_sale.controllers.main import WebsiteSale
@@ -70,7 +70,7 @@ class WebsiteLogin(AuthSignupHome):
                 [('email', '=', qcontext.get('signup_email')),
                  ('state', '!=', 'new')], limit=1)
             if user:
-                return request.redirect('/web/login?%s' % url_encode(
+                return request.redirect('/web/login?%s' % urlencode(
                     {'login': user.login, 'redirect': '/web'}))
         response = request.render('auth_signup.signup', qcontext)
         response.headers['X-Frame-Options'] = 'SAMEORIGIN'

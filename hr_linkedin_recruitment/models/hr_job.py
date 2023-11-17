@@ -22,8 +22,7 @@
 
 import logging
 import requests
-from werkzeug.urls import url_encode
-from werkzeug.urls import url_join
+from urllib.parse import urljoin, urlencode
 
 from odoo import models, fields, _
 from odoo.exceptions import ValidationError
@@ -43,7 +42,7 @@ class HrJobShare(models.Model):
 
     def _get_linkedin_post_redirect_uri(self):
         """finding redirecting url"""
-        return url_join(self.get_base_url(), '/linkedin/redirect')
+        return urljoin(self.get_base_url(), '/linkedin/redirect')
 
     def share_linkedin(self):
         """ Button function for sharing post """
@@ -67,7 +66,7 @@ class HrJobShare(models.Model):
 
         return {
             'type': 'ir.actions.act_url',
-            'url': 'https://www.linkedin.com/oauth/v2/authorization?%s' % url_encode(params),
+            'url': 'https://www.linkedin.com/oauth/v2/authorization?%s' % urlencode(params),
             'target': 'self'
         }
 

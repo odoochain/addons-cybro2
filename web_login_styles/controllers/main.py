@@ -21,15 +21,13 @@
 #############################################################################
 
 import json
-
-import werkzeug
 import hashlib
 from odoo.tools import pycompat
 
 from odoo import http
 from odoo.http import request
 import odoo
-from werkzeug.urls import url_encode, iri_to_uri
+from urllib.parse import urlencode
 from odoo.tools.translate import _
 from odoo.addons.web.controllers import main
 from odoo import http

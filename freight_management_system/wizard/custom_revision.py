@@ -20,7 +20,8 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 ###################################################################################
-from werkzeug import urls
+from urllib.parse import urljoin
+
 from odoo import models, fields, _
 
 
@@ -36,9 +37,9 @@ class CustomClearanceRevisionReason(models.TransientModel):
         """create revision"""
         for rec in self.custom_id:
             base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
-            Urls = urls.url_join(base_url,
+            Urls = urljoin(base_url,
                                  'web#id=%(id)s&model=custom.clearance&view_type=form' % {'id': self.custom_id.id})
-            Urls_ = urls.url_join(base_url,
+            Urls_ = urljoin(base_url,
                                   'web#id=%(id)s&model=freight.order&view_type=form' % {'id': self.custom_id.freight_id.id})
 
             mail_content = _('Hi %s,<br>'

@@ -19,6 +19,8 @@
 #    If not, see <http://www.gnu.org/licenses/>.
 #
 ###############################################################################
+from urllib.parse import urlencode
+
 import boto3
 import dropbox
 import errno
@@ -34,7 +36,6 @@ import odoo
 from datetime import timedelta
 from nextcloud import NextCloud
 from requests.auth import HTTPBasicAuth
-from werkzeug import urls
 from odoo import api, fields, models, _
 from odoo.exceptions import UserError, ValidationError
 from odoo.http import request
@@ -347,7 +348,7 @@ class DbBackupConfigure(models.Model):
             'backup_config_id': self.id,
             'url_return': url_return
         }
-        encoded_params = urls.url_encode({
+        encoded_params = urlencode({
             'response_type': 'code',
             'client_id': self.onedrive_client_key,
             'state': json.dumps(state),
@@ -375,7 +376,7 @@ class DbBackupConfigure(models.Model):
             'backup_config_id': self.id,
             'url_return': url_return
         }
-        encoded_params = urls.url_encode({
+        encoded_params = urlencode({
             'response_type': 'code',
             'client_id': self.gdrive_client_key,
             'scope': 'https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/drive.file',

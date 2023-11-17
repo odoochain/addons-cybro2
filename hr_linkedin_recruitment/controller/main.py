@@ -21,7 +21,6 @@
 #############################################################################
 
 import logging
-from werkzeug import urls
 
 _logger = logging.getLogger(__name__)
 try:
@@ -39,7 +38,7 @@ from odoo.exceptions import ValidationError, Warning
 import requests
 from odoo import http, _
 from odoo.http import request
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 from urllib.parse import parse_qs
 
 
@@ -161,7 +160,7 @@ class LinkedinSocial(http.Controller):
 
         li_suit_credent['li_credential'] = li_credential
 
-        url = urls.url_join(
+        url = urljoin(
             http.request.env['ir.config_parameter'].sudo().get_param(
                 'web.base.url'),
             'web#id=%(id)s&model=hr.job&action=%(action)s&view_type=form' % {

@@ -20,8 +20,7 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 ###################################################################################
-
-from werkzeug import urls
+from urllib.parse import urljoin
 from odoo import fields, models, _
 
 
@@ -49,7 +48,7 @@ class FreightTracking(models.Model):
         })
         for rec in self.freight_id:
             base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
-            Urls = urls.url_join(base_url, 'web#id=%(id)s&model=freight.order&view_type=form' % {'id': self.id})
+            Urls = urljoin(base_url, 'web#id=%(id)s&model=freight.order&view_type=form' % {'id': self.id})
 
             mail_content = _('Hi<br>'
                              'The Freight Order %s is %s at %s'

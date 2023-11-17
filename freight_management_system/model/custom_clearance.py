@@ -20,6 +20,8 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 ###################################################################################
+from urllib.parse import urljoin
+
 from werkzeug import urls
 from odoo import api, fields, models, _
 
@@ -64,8 +66,8 @@ class CustomClearance(models.Model):
                        ' - ' + rec.freight_id.name
             rec.state = 'confirm'
             base_url = self.env['ir.config_parameter'].sudo().get_param('web.base.url')
-            Urls = urls.url_join(base_url, 'web#id=%(id)s&model=custom.clearance&view_type=form' % {'id': self.id})
-            Urls_ = urls.url_join(base_url, 'web#id=%(id)s&model=freight.order&view_type=form' % {'id': self.freight_id.id})
+            Urls = urljoin(base_url, 'web#id=%(id)s&model=custom.clearance&view_type=form' % {'id': self.id})
+            Urls_ = urljoin(base_url, 'web#id=%(id)s&model=freight.order&view_type=form' % {'id': self.freight_id.id})
 
             mail_content = _('Hi %s,<br>'
                              'The Custom Clearance %s is confirmed'

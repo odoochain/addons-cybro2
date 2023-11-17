@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!--view in res.users-->
-    <record id="res_users_view_form" model="ir.ui.view">
-        <field name="name">res.users.form.inherit.user.weather.notification</field>
+    <!--
+    This XML file defines a customization to the Odoo user interface for the
+    'res.users' model.
+    It adds a new page after 'Preferences' for Weather Settings, allowing users to
+    input their API key.
+    -->
+    <record id="view_users_form" model="ir.ui.view">
+        <field name="name">res.users.view.form.inherit.user.weather.notification</field>
         <field name="model">res.users</field>
         <field name="type">form</field>
         <field name="inherit_id" ref="base.view_users_form"/>
@@ -12,7 +17,8 @@
                     <group>
                         <field name="api_key"/>
                         <field name="location_set"/>
-                        <field name="city" attrs="{'invisible':[('location_set', '!=', 'manual')]}"/>
+                        <field name="city" attrs="{'invisible':[
+                        ('location_set', '!=', 'manual')]}"/>
                     </group>
                 </page>
             </xpath>

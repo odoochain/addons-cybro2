@@ -1,6 +1,7 @@
 /** @odoo-module **/
-import { registerPatch } from '@mail/model/model_core';
+import {registerPatch} from '@mail/model/model_core';
 import '@mail/models/composer_view';
+
 var rpc = require('web.rpc');
 
 
@@ -19,12 +20,11 @@ registerPatch({
                 method: 'get_message',
             })
                 .then(function (data) {
-                    var search_terms = data
                     if (value !== '/') {
                         /*Matching sentences or words are taken from the list search_terms*/
                         value = value.replace(new RegExp("\\\\", "g"), "\\\\");
                         const matcher = new RegExp(`^${value}`, 'g');
-                        var filter_list = search_terms.filter(word => word.match(matcher));
+                        const filter_list = data.filter(word => word.match(matcher));
                         filter_list.sort();
                         if (filter_list[0] == null) {
                             autoCompleteTextAreaEl.value = ' ';
@@ -32,7 +32,7 @@ registerPatch({
                         else {
                             autoCompleteTextAreaEl.value = filter_list[0];
                         }
-                        if (value == '') {
+                        if (value === '') {
                             autoCompleteTextAreaEl.value = " ";
                         }
                         switch (ev.key) {

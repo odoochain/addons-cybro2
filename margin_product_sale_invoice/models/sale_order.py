@@ -27,7 +27,7 @@ class SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
 
     cost_price_sale = fields.Float(string='Cost',
-                                   related='product_id.standard_price',
+                                   compute='compute_cost_price',
                                    store=True, help='Field for cost price')
     margin_amount_sale = fields.Float(string='Margin Amount',
                                       compute='compute_margin_amount',
@@ -55,8 +55,10 @@ class SaleOrder(models.Model):
     """This class is used to display margin on sale order."""
     _inherit = 'sale.order'
 
-    margin_percent_sale = fields.Float(string='Margin %', help='Field for margin in percentage')
-    margin_amount_sale_total = fields.Float(string='Margin Amount', help='Field for Margin amount in total ')
+    margin_percent_sale = fields.Float(string='Margin %',
+                                       help='Field for margin in percentage')
+    margin_amount_sale_total = fields.Float(string='Margin Amount',
+                                            help='Field for Margin amount in total ')
 
     def action_confirm(self):
         """Method for confirm sale order and set values to margin and margin
@@ -64,6 +66,7 @@ class SaleOrder(models.Model):
         res = super(SaleOrder, self).action_confirm()
         for record in self:
             if record.order_line.product_id:
-                record.margin_amount_sale_total = sum(record.order_line.mapped('margin_amount_sale'))
+                record.margin_amount_sale_total = sum(
+                    record.order_line.mapped('margin_amount_sale'))
                 record.margin_percent_sale = record.margin_amount_sale_total / record.amount_total
         return res

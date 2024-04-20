@@ -32,7 +32,7 @@
     'company': "Cybrosys Techno Solutions",
     'maintainer': "Cybrosys Techno Solutions",
     'website': "https://cybrosys.com/",
-    'depends': ['base','base_setup'],
+    'depends': ['base', 'base_setup'],
     'data': [
         'security/ir_module_category_data.xml',
         'security/ir.model.access.csv',
@@ -49,6 +49,6 @@
     'images': ['static/description/banner.jpg'],
     'license': "AGPL-3",
     'installable': True,
-    'auto_install': True,
+    'auto_install': False,
     'application': False
 }
